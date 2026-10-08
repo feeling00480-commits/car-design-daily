@@ -28,7 +28,8 @@ def page(d, base, all_issues, is_root):
     css = f"{base}assets/style.css"
     title = f"汽車設計日報 Car Design Daily · {y}.{m}.{dd}"
     desc = d["lede"]
-    ogimg = f"{SITE}/issues/{date}/img/{d['moodboards'][0]['images'][0][0]}.webp" if SITE else ""
+    lead = d["design_news"][0].get("image")
+    ogimg = (f"{SITE}/issues/{date}/img/{lead['file']}" if lead else f"{SITE}/issues/{date}/img/{d['moodboards'][0]['images'][0][0]}.webp") if SITE else ""
     canon = (f"{SITE}/issues/{date}/" if SITE else "")
     H = []
     H.append(f'''<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8">
@@ -56,11 +57,14 @@ def page(d, base, all_issues, is_root):
     for i, s in enumerate(d["design_news"]):
         an = "".join(f'<li><b>{e(k)}</b><span>{e(v)}</span></li>' for k, v in s["analysis"])
         src = "".join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(n)} ↗</a>' for n, u in s["sources"])
+        im = s.get("image")
+        fig = (f'<figure class="news-img"><img src="{img}{e(im["file"])}" alt="{e(im["alt"])}" loading="{"eager" if i == 0 else "lazy"}" decoding="async" width="1600" height="900">'
+               f'<figcaption>圖片來源：<a href="{e(im["credit_url"])}" target="_blank" rel="noopener">{e(im["credit"])}</a></figcaption></figure>') if im else ""
         head = f'<div><span class="tag">{e(s["brand"])} · {e(s["tag"])}</span><span class="date">{e(s["date"])}</span><h3>{e(s["title"])}</h3><p class="orig">{e(s["orig"])}</p><p class="sum">{e(s["summary"])}</p>'
         if i == 0:
-            H.append(f'<article class="story feature" id="{s["id"]}">{head}<div class="src">來源：{src}</div></div><div><p class="alabel">設計解析 Design Notes</p><ul class="analysis">{an}</ul></div></article>')
+            H.append(f'<article class="story feature" id="{s["id"]}">{fig}{head}<div class="src">來源：{src}</div></div><div><p class="alabel">設計解析 Design Notes</p><ul class="analysis">{an}</ul></div></article>')
         else:
-            H.append(f'<article class="story" id="{s["id"]}">{head}</div><p class="alabel">設計解析 Design Notes</p><ul class="analysis">{an}</ul><div class="src">來源：{src}</div></article>')
+            H.append(f'<article class="story" id="{s["id"]}">{fig}{head}</div><p class="alabel">設計解析 Design Notes</p><ul class="analysis">{an}</ul><div class="src">來源：{src}</div></article>')
     H.append('</div></section>')
     # knowledge
     H.append('<section id="knowledge"><div class="sec-head"><span class="num">02</span><h2>汽車新知</h2><span class="en">Industry &amp; Tech</span></div><div class="kgrid">')
@@ -82,7 +86,7 @@ def page(d, base, all_issues, is_root):
     # archive
     li = "".join(f'<li><a href="{base}issues/{x["date"]}/">No.{x["issue_no"]:03d} · {x["date"]}</a> — {e(x["design_news"][0]["title"])}</li>' for x in all_issues)
     H.append(f'<section class="archive" id="archive"><div class="sec-head"><span class="num">∞</span><h2>往期</h2><span class="en">Archive</span></div><ul>{li}</ul></section>')
-    H.append(f'''</main><footer><div class="wrap">Car Design Daily · 每日整理全球汽車設計新聞、產業新知與隨機情緒板。內容摘要與分析為編輯整理，事實以原始來源為準；新聞圖片版權屬原媒體與車廠，本站只附連結。<br>Issue {d["issue_no"]:03d} · {date}</div></footer>
+    H.append(f'''</main><footer><div class="wrap">Car Design Daily · 每日整理全球汽車設計新聞、產業新知與隨機情緒板。內容摘要與分析為編輯整理，事實以原始來源為準；新聞圖片取自車廠官方新聞室／原報導，版權屬原權利人，均標示來源並連結原頁。<br>Issue {d["issue_no"]:03d} · {date}</div></footer>
 <script>document.getElementById('tg').onclick=function(){{var r=document.documentElement,c=r.getAttribute('data-theme');var dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;var n=dark?'light':'dark';r.setAttribute('data-theme',n);localStorage.setItem('cdd-theme',n);}};</script>
 </body></html>''')
     return "\n".join(H)

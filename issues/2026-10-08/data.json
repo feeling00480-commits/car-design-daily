@@ -51,7 +51,13 @@
           "Car and Driver",
           "https://www.caranddriver.com/news/a74036834/2028-jaguar-type-01-revealed/"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-jaguar-type-01.webp",
+        "alt": "Jaguar Type 01 前側 34 視角，藍灰色車身",
+        "credit": "JLR Media",
+        "credit_url": "https://media.jlr.com/news/2026/10/designed-engineered-and-manufactured-britain-jlr-unveils-new-jaguar-type-01"
+      }
     },
     {
       "id": "bmw-ix4",
@@ -88,7 +94,13 @@
           "BMW PressClub",
           "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-bmw-ix4.webp",
+        "alt": "兩台 BMW iX4 停在海岸邊（灰色與紅色）",
+        "credit": "BMW Group PressClub",
+        "credit_url": "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
+      }
     },
     {
       "id": "vw-mission-efficiency",
@@ -121,7 +133,13 @@
           "Car Design News",
           "https://www.cardesignnews.com/cars/first-sight-volkswagens-mission-efficiency-streamliner-is-more-practical-than-it-looks/2746766"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-vw-mission-efficiency.webp",
+        "alt": "Volkswagen Mission Efficiency 流線型概念車側面",
+        "credit": "Volkswagen Newsroom",
+        "credit_url": "https://www.volkswagen-newsroom.com/en/press-releases/mission-efficiency-volkswagen-presents-the-worlds-most-efficient-near-production-electric-car-20691"
+      }
     },
     {
       "id": "renault-e-space",
@@ -154,7 +172,13 @@
           "Electrek",
           "https://electrek.co/2026/10/06/electric-minivan-bringing-80s-icon-back-to-life/"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-renault-e-space.webp",
+        "alt": "Renault E-Space Concept 單廂電動家庭車，停在沙漠",
+        "credit": "Renault Media",
+        "credit_url": "https://media.renault.com/e-space-concept-renault-reinvents-the-voiture-a-vivre-and-sets-a-date-for-the-2026-paris-motor-show/?lang=eng"
+      }
     },
     {
       "id": "hyundai-tucson",
@@ -187,7 +211,13 @@
           "Car Design News",
           "https://www.cardesignnews.com/cars/hyundai-talks-tucson-and-intuitive-design/2746634"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-hyundai-tucson.webp",
+        "alt": "第五代 Hyundai Tucson 在沙丘上行駛",
+        "credit": "Hyundai Worldwide Newsroom",
+        "credit_url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001280"
+      }
     },
     {
       "id": "porsche-mission-s",
@@ -216,7 +246,13 @@
           "Road & Track",
           "https://www.roadandtrack.com/news/a74066848/porsche-reveals-plans-potential-halo-supercar-more-exclusive-911-variants/"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-porsche-mission-s.webp",
+        "alt": "Porsche Mission S 官方預告圖（只露出廠徽）",
+        "credit": "Porsche（Mission S 預告頁）",
+        "credit_url": "https://www.porsche.com/international/models/mission-s-preview/"
+      }
     },
     {
       "id": "alpine-ps1",
@@ -245,7 +281,13 @@
           "Alpine Media",
           "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
         ]
-      ]
+      ],
+      "image": {
+        "file": "news-alpine-ps1.webp",
+        "alt": "Alpine PS1 概念車官方預告圖：頭燈特寫",
+        "credit": "Alpine Media",
+        "credit_url": "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
+      }
     }
   ],
   "knowledge": [

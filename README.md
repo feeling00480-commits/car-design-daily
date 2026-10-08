@@ -26,6 +26,13 @@ tools/
 ## 產生下一期（每日流程）
 1. **蒐集設計新聞（5–8 則，近 24–72 小時）**：用 WebSearch/WebFetch 實際讀過原文才收錄；不得杜撰日期、引言。
    每則：品牌、標籤、日期、中文標題、原文標題、2–3 句摘要、3–5 點設計解析（比例／燈號／面處理／CMF／室內 UX／品牌方向）、來源連結。
+   - **每則設計新聞都必須有 1 張代表圖（必要步驟）**：
+     1. 優先用車廠官方新聞室／press kit 圖片（BMW PressClub、JLR Media、VW Newsroom、Renault/Alpine Media、Hyundai Newsroom、Porsche Newsroom…）；找不到才用來源報導的 `og:image`。
+        取得方式：`curl -sL -A "<瀏覽器 UA>" <URL> | grep -o -i -E '<meta[^>]*og:image[^>]*>'`，必要時在頁面 HTML 中找較大尺寸的圖。
+     2. 必須確認圖片就是該車款（開圖檢查）；**不可用不相符的圖，也不可用 AI 生成圖代表真實車款**。若找不到合適圖片，該則不放圖，並在回報中註明。
+     3. 裁成 16:9、縮成 1600×900 WebP（q≈82，<300KB），存成 `issues/<date>/img/news-<id>.webp`。
+     4. 在 data.json 該則加入 `"image": {"file": "news-<id>.webp", "alt": "<中文描述>", "credit": "<來源名稱，如 BMW Group PressClub>", "credit_url": "<來源頁面>"}`。
+        build.py 會把圖片放在卡片最上方（object-fit: cover、lazy loading、alt），並顯示「圖片來源：…」連結；首則卡片的圖也會用作 og:image。
 2. **汽車新知（3–5 則）**：EV、電池、自駕、法規、製造、市場；摘要＋連結。另寫一則「今日設計名詞」（盡量和當期新聞呼應）。
 3. **情緒板（1–2 組）**：`python3 tools/pick_themes.py 2` 抽主題 → 每組 4–6 張原創虛構圖（不可出現真實車款或 logo）＋6 色 hex 色票、關鍵字、材質筆記。
    - 有 GenerateImage 等生圖工具時優先使用，輸出後轉 WebP（≤1400px、q≈80）放 `issues/<date>/img/`，命名 `mb1-1…`、`mb2-1…`，每組第一張為 hero（16:9），其餘 4:3。
@@ -34,7 +41,7 @@ tools/
 5. 發佈：在 `/workspace/car-design-daily` 執行 `./tools/publish.sh "Issue 00N · YYYY-MM-DD"`
    （= `python3 tools/build.py --site-url "$(cat .site-url)"` → `git add -A` → `git commit` → `git push origin main`）。
    GitHub Pages 約 1–2 分鐘重新部署（可用 `gh api repos/feeling00480-commits/car-design-daily/pages/builds/latest` 查狀態）。
-   之後用 WebFetch／curl 驗證 `https://feeling00480-commits.github.io/car-design-daily/`、`/issues/<date>/`、`/archive/` 與圖片都回 200。
+   之後用 WebFetch／curl 驗證 `https://feeling00480-commits.github.io/car-design-daily/`、`/issues/<date>/`、`/archive/` 以及所有新聞圖與情緒板圖片都回 200。
    - 所有站內連結必須是相對路徑（站點位於子路徑 `/car-design-daily/`）；og:image／canonical 用 `.site-url` 產生絕對網址。
 6. 預覽圖：`google-chrome --headless=new --no-sandbox --window-size=1280,2400 --screenshot=preview.png <URL>`
 
