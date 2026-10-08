@@ -1,0 +1,315 @@
+{
+  "date": "2026-10-08",
+  "weekday": "週四",
+  "issue_no": 1,
+  "lede": "MiniMax H3 開始能在單張消費級顯卡上跑；Qwen-Image 2.1 推出第一個鏡頭角度 LoRA；Krea 2 官方沒有新權重，但社群微調 Kroma 更新到 v0.3.1，Krea 也推出 Photoshop 外掛。同一週還有 GPT-6 進入 ChatGPT、Claude Haiku 5.5、Mistral Large 4 預覽版，以及開源影音模型 Kandinsky 6.0。",
+  "watch": [
+    {
+      "id": "minimax-h3",
+      "model": "MiniMax H3",
+      "kind": "影片＋音訊生成",
+      "status": "社群加速版大量出現，單張 RTX 5090 就能跑",
+      "updates": [
+        {
+          "title": "FastH3 V2 消費級顯卡版＋FastH3 Trim",
+          "date": "2026-10-06",
+          "summary": "UC San Diego Hao AI Lab（FastVideo 團隊）把 8 步蒸餾的 FastH3 V2 帶到單張 RTX 5090／4090、RTX PRO 6000、DGX Spark 和 Apple Silicon Mac，提供 NVFP4、FP8 和 MLX 量化版本。另有實驗性剪枝版 FastH3 Trim，把 50 個 block 剪到 42 個，比原版 H3 小 4.2 倍，最低 8GB 顯存就能跑。在 RTX 5090 上生成 5 秒 832×480 含音訊影片約 13.4 秒（Trim 版）。ComfyUI 單檔權重已上 Hugging Face。",
+          "links": [
+            [
+              "ArtRealmAI",
+              "https://artrealmai.com/article/fasth3-v2-trim-consumer-gpus-rtx-mac"
+            ],
+            [
+              "Hugging Face · FastH3-Trim-Comfy",
+              "https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-Comfy"
+            ]
+          ],
+          "image": {
+            "file": "fasth3.webp",
+            "alt": "Hugging Face 上 FastVideo/FastVideo-FastH3-Trim-Comfy 模型頁的分享卡",
+            "credit": "Hugging Face · FastVideo",
+            "credit_url": "https://huggingface.co/FastVideo/FastVideo-FastH3-Trim-Comfy"
+          }
+        },
+        {
+          "title": "Veda Sparse Attention 官方 ComfyUI 節點",
+          "date": "2026-10-03",
+          "summary": "ByteDance、香港大學和中國科大的 Veda（ICML 2026）推出官方 ComfyUI 節點。它用蒸餾出來的稀疏預測器，只計算約 10% 的 attention tile，不改模型權重，也相容 LoRA。在 RTX 5070 上生成 1344×768、5.2 秒的影片，端到端約快 2.9 倍，attention 部分約快 7.1 倍。需要 ComfyUI 0.38 以上；預測器（275MB）目前是 preview 版，不要和 Model Sparse Attention 疊用。",
+          "links": [
+            [
+              "ComfyUI Wiki",
+              "https://comfyui-wiki.com/en/news/2026-10-05-veda-sparse-attention"
+            ],
+            [
+              "Comfy Registry",
+              "https://registry.comfy.org/publishers/veda-sparse/nodes/veda-sparse-attention"
+            ]
+          ],
+          "image": {
+            "file": "veda.webp",
+            "alt": "Veda 稀疏注意力在 95% 稀疏度下生成的示例畫面：田間農夫",
+            "credit": "ComfyUI Wiki（Veda 專案示例）",
+            "credit_url": "https://comfyui-wiki.com/en/news/2026-10-05-veda-sparse-attention"
+          }
+        }
+      ]
+    },
+    {
+      "id": "qwen-image-2-1",
+      "model": "Qwen-Image 2.1",
+      "kind": "影像生成／編輯",
+      "status": "編輯生態補齊：鏡頭角度、換裝、角色立繪",
+      "updates": [
+        {
+          "title": "Multiple-Angles LoRA：一張圖換 36 種視角",
+          "date": "2026-10-07",
+          "summary": "akhaliq 發布 Qwen-Image 2.1 的鏡頭角度 LoRA（約 159MB，Apache-2.0）。輸入物件照片，再指定 12 個方位 × 4 種仰角，共 36 種視角（加上 close-up 為 72 種），就能從新角度重繪同一物件。觸發詞為 <mva>，建議強度 0.8–1.0。訓練資料以物件為主（Dome-Objaverse，512²），人物角度未測試；Qwen-Image 2.1 本體採 Qwen Research 授權。",
+          "links": [
+            [
+              "Hugging Face",
+              "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA"
+            ],
+            [
+              "ArtRealmAI",
+              "https://artrealmai.com/article/qwen-image-2-1-multiple-angles-camera-lora"
+            ]
+          ],
+          "image": {
+            "file": "qwen-angles.webp",
+            "alt": "Hugging Face 上 akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA 模型頁的分享卡",
+            "credit": "Hugging Face · akhaliq",
+            "credit_url": "https://huggingface.co/akhaliq/Qwen-Image-2.1-Multiple-Angles-LoRA"
+          }
+        },
+        {
+          "title": "VNCCS 3.2 支援 Qwen Image 2.1 與 MiniMax H3",
+          "date": "2026-10-05",
+          "summary": "ComfyUI 角色製作流程 VNCCS 3.2 加入 Qwen Image 2.1 和 MiniMax H3，可輸出透明背景立繪。Character Creator 重新打造，內建 358 種風格。",
+          "links": [
+            [
+              "ComfyUI Wiki 新聞",
+              "https://comfyui-wiki.com/en/news"
+            ]
+          ],
+          "image": null
+        },
+        {
+          "title": "Outfit Swap LoRA：只換衣服，其他不動",
+          "date": "2026-10-04",
+          "summary": "Qwen-Image 2.1 的社群 LoRA，在原圖上只替換服裝，構圖、臉和背景維持不變，附 ComfyUI workflow。",
+          "links": [
+            [
+              "ComfyUI Wiki 新聞",
+              "https://comfyui-wiki.com/en/news"
+            ]
+          ],
+          "image": null
+        }
+      ]
+    },
+    {
+      "id": "krea-2",
+      "model": "Krea 2",
+      "kind": "影像生成",
+      "status": "官方本週沒有新權重；社群微調和工具整合持續推進",
+      "updates": [
+        {
+          "title": "Kroma v0.3.1 OPD（社群 Turbo 微調）",
+          "date": "2026-10-07",
+          "summary": "Lodestones 的 Krea 2 社群微調 Kroma 更新到 v0.3.1，改用 on-policy distillation：學生模型先生成自己的軌跡，再由老師模型修正，保住 Turbo 速度，也比較不會掉細節。檔案約 26.3GB；建議 8–12 步、CFG 1.0–1.5、shift 1.15，原有 LoRA 可以沿用。舊版 v0.1／v0.2 檔案已刪除。",
+          "links": [
+            [
+              "ComfyUI Wiki",
+              "https://comfyui-wiki.com/en/news/2026-10-07-kroma-v0-3-1-opd"
+            ],
+            [
+              "Hugging Face · lodestones/Kroma",
+              "https://huggingface.co/lodestones/Kroma"
+            ]
+          ],
+          "image": {
+            "file": "kroma.webp",
+            "alt": "Hugging Face 上 lodestones/Kroma 模型頁的分享卡",
+            "credit": "Hugging Face · lodestones",
+            "credit_url": "https://huggingface.co/lodestones/Kroma"
+          }
+        },
+        {
+          "title": "Krea Plugin for Photoshop",
+          "date": "2026-10-07",
+          "summary": "Krea 官方推出 Photoshop 外掛，可以在 Photoshop 裡直接使用 Krea 2、Nano Banana、GPT IMG 2.5，以及 Krea 平台上的其他模型。",
+          "links": [
+            [
+              "X @krea_ai",
+              "https://x.com/krea_ai/status/2107848434128752777"
+            ]
+          ],
+          "image": {
+            "file": "krea-photoshop.webp",
+            "alt": "Krea 官方 X 貼文的 Photoshop 外掛宣傳影片縮圖",
+            "credit": "Krea（X 貼文影片縮圖）",
+            "credit_url": "https://x.com/krea_ai/status/2107848434128752777"
+          }
+        }
+      ]
+    }
+  ],
+  "news": [
+    {
+      "id": "gpt-6",
+      "org": "OpenAI",
+      "tag": "LLM · 產品",
+      "date": "2026-10-07",
+      "title": "GPT-6 Sol／Luna 進入 ChatGPT，加上 Intelligent UI",
+      "orig": "GPT-6 for everyone",
+      "summary": "GPT-6 Sol 開始在 ChatGPT 推送給 Plus、Pro、Business 和 Enterprise 用戶，GPT-6 Luna 隔天起開放給 Free 和 Go 用戶。新的 Intelligent UI 會依問題，在回覆中混合文字、圖表、按鈕、表單和互動小工具，模型還在思考時就能先開始輸出。",
+      "links": [
+        [
+          "OpenAI",
+          "https://openai.com/index/gpt-6-for-everyone"
+        ],
+        [
+          "9to5Mac",
+          "https://9to5mac.com/2026/10/07/openai-brings-gpt-6-to-chatgpt-and-debuts-intelligent-ui/"
+        ]
+      ],
+      "image": {
+        "file": "gpt6.webp",
+        "alt": "OpenAI GPT-6 with Intelligent UI 官方宣傳圖",
+        "credit": "OpenAI",
+        "credit_url": "https://openai.com/index/gpt-6-for-everyone"
+      }
+    },
+    {
+      "id": "claude-haiku-5-5",
+      "org": "Anthropic",
+      "tag": "LLM · 小模型",
+      "date": "2026-10-07",
+      "title": "Claude Haiku 5.5：最快、最便宜的 Claude",
+      "orig": "Claude Haiku 5.5",
+      "summary": "平均比 Haiku 4.5 便宜約 75%；10 萬 token 以內的請求，輸入每百萬 token $0.10、輸出 $0.50。這是第一個支援 effort 設定的 Haiku，OSWorld 2.1 得分 72.4%。同時 Sonnet 5.5 的 cache read 價格減半，Max／Team 訂閱者每月另有 API 額度。",
+      "links": [
+        [
+          "Anthropic",
+          "https://www.anthropic.com/claude-haiku-5-5"
+        ]
+      ],
+      "image": {
+        "file": "claude-haiku-5-5.webp",
+        "alt": "Anthropic Claude Haiku 5.5 官方宣傳圖",
+        "credit": "Anthropic",
+        "credit_url": "https://www.anthropic.com/claude-haiku-5-5"
+      }
+    },
+    {
+      "id": "mistral-large-4",
+      "org": "Mistral AI",
+      "tag": "LLM · 預覽",
+      "date": "2026-10-06",
+      "title": "Mistral Large 4 公開預覽：1T 參數、原生多模態",
+      "orig": "Mistral Large 4 (preview)",
+      "summary": "總參數 1T、啟用 52B 的原生多模態 MoE，已開放 preview API，權重預計 10 月底釋出。模型在歐洲以 3,800 張 Grace Blackwell GPU 訓練。官方主打程式、資安和 grounding 能力：DeepSWE 61.7%、Cybench 93%。",
+      "links": [
+        [
+          "Mistral AI",
+          "https://mistral.ai/news/mistral-large-4/"
+        ]
+      ],
+      "image": {
+        "file": "mistral-large-4.webp",
+        "alt": "Mistral AI 官方頁面分享圖",
+        "credit": "Mistral AI",
+        "credit_url": "https://mistral.ai/news/mistral-large-4/"
+      }
+    },
+    {
+      "id": "kandinsky-6",
+      "org": "Kandinsky Lab",
+      "tag": "影片 · 開源",
+      "date": "2026-10-06",
+      "title": "Kandinsky 6.0 Video 開源：影片和音訊同步生成",
+      "orig": "Kandinsky 6.0",
+      "summary": "開源權重，分 Pro 29B 和 Lite 3B 兩個版本，可生成 5 秒 24fps 影片，同步產生 44kHz 音訊（含對嘴）。支援文字轉影音（T2AV）和圖文轉影音（TI2AV），另有超解析模型可放大到 Full HD。ComfyUI 有官方擴充（需 0.38 以上），也支援 Diffusers 和 vLLM-Omni。",
+      "links": [
+        [
+          "ComfyUI Wiki",
+          "https://comfyui-wiki.com/en/news/2026-10-06-kandinsky-6-0"
+        ],
+        [
+          "Hugging Face",
+          "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers"
+        ],
+        [
+          "GitHub",
+          "https://github.com/kandinskylab/kandinsky-6"
+        ]
+      ],
+      "image": {
+        "file": "kandinsky6.webp",
+        "alt": "Hugging Face 上 kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers 模型頁的分享卡",
+        "credit": "Hugging Face · kandinskylab",
+        "credit_url": "https://huggingface.co/kandinskylab/Kandinsky-6.0-Pro-5s-Diffusers"
+      }
+    },
+    {
+      "id": "nano-banana-2-1",
+      "org": "Google DeepMind",
+      "tag": "影像 · GA",
+      "date": "2026-10-06",
+      "title": "Nano Banana 2.1 正式推出",
+      "orig": "Nano Banana 2.1 model card",
+      "summary": "以 Gemini 3.6 Flash 為基礎的影像生成和編輯模型，可在 Gemini App、AI Studio、Gemini API、Search AI Mode、Ads、Flow 和 Stitch 使用。官方評測的 Elo 分數高於 Nano Banana 2 和 Pro，多角色一致性進步最多。已知限制：小字容易出錯，偶爾會搞混左右方向。",
+      "links": [
+        [
+          "Google DeepMind 模型卡",
+          "https://deepmind.google/models/model-cards/nano-banana-2-1/"
+        ]
+      ],
+      "image": null
+    },
+    {
+      "id": "reflection-beam",
+      "org": "Reflection AI",
+      "tag": "LLM · 開源權重",
+      "date": "2026-10-05",
+      "title": "Reflection Beam：501B MoE，首款開源權重模型",
+      "orig": "Introducing Beam",
+      "summary": "總參數 501B、啟用 23B 的 MoE，主打程式和代理任務，以 23.8T token 預訓練，並在 10.5K 張 GB300 上做強化學習。目前開放候補試用，權重預計 10 月內以 Apache 2.0 釋出。",
+      "links": [
+        [
+          "Reflection AI",
+          "https://reflection.ai/blog/introducing-beam"
+        ]
+      ],
+      "image": {
+        "file": "reflection-beam.webp",
+        "alt": "Reflection AI Beam 官方宣傳圖",
+        "credit": "Reflection AI",
+        "credit_url": "https://reflection.ai/blog/introducing-beam"
+      }
+    }
+  ],
+  "video": {
+    "title": "Krea 2 vs Qwen 2.1 vs MiniMax H3：角色設定表大比拚",
+    "orig": "Krea 2 vs Qwen 2.1 vs MiniMax H3 character sheets",
+    "channel": "Ok Todd AI",
+    "youtube_id": "App5Rhnn-K0",
+    "url": "https://www.youtube.com/watch?v=App5Rhnn-K0",
+    "date": "約 2026-10-06（YouTube 顯示「2 天前」）",
+    "summary": "比較 Krea 2、Qwen Image 2.1 和 MiniMax H3 製作 AI 角色設定表（character sheet）的效果，並示範 ComfyUI 工作流程（縮圖標示另有兩項額外測試）。正好對照本期三張追蹤卡。",
+    "thumb": {
+      "file": "yt-krea-qwen-h3.webp",
+      "alt": "Ok Todd AI 影片縮圖：Krea 2、Qwen 2.1、MiniMax H3 角色設定表比較",
+      "credit": "YouTube · Ok Todd AI"
+    }
+  },
+  "caveats": [
+    "效能和品質數字（例如 FastH3 的速度、各家 benchmark）多半是開發團隊或官方自評，尚未經過獨立驗證。",
+    "Mistral Large 4 和 Reflection Beam 目前只有 preview API 或候補名單，權重預計 10 月底前才會釋出。",
+    "授權各不相同：Qwen-Image 2.1 本體是 Qwen Research 授權，MiniMax H3 是社群授權，LoRA 和微調另有授權；商用前請先確認。",
+    "Kroma、Outfit Swap、VNCCS 等是第三方社群作品，檔案和說明可能隨時變動（Kroma 舊版已刪除）。FastH3 的 Mac MLX 權重頁在整理時無法開啟。",
+    "OpenAI 和 X 原文頁無法直接擷取，GPT-6 摘要依 9to5Mac 報導整理，Krea 外掛依官方貼文內容整理。",
+    "推薦影片的日期由 YouTube 的「2 天前」推估。",
+    "另有 Liquid d1、Aleph Alpha Kolibri-1、Prism 2K 等消息，因資訊不足沒有收錄。"
+  ]
+}

@@ -8,11 +8,9 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+TC:wght@400;600&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./assets/style.css">
-<script>(function(){var t=localStorage.getItem('cdd-theme');if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
-</head><body>
-<header class="topbar"><div class="wrap"><a class="brand" href="./">CAR DESIGN <span>DAILY</span></a>
-<nav class="nav"><a href="#design">設計新聞</a><a href="#knowledge">汽車新知</a><a href="#mood">情緒板</a><a href="./archive/">往期</a></nav>
-<button class="toggle" id="tg" aria-label="切換深淺色">◐ 深／淺</button></div></header>
+<script>(function(){var t=localStorage.getItem('cdd-theme')||null;if(t)document.documentElement.setAttribute('data-theme',t);})();</script>
+</head><body class="mode-car">
+<header class="topbar"><div class="wrap"><a class="brand" href="./">CAR DESIGN <span>DAILY</span></a><nav class="modes" aria-label="切換日報"><a href="./" aria-current="page" class="on"><i class="dot"></i>汽車設計</a><a href="./ai/"><i class="dot"></i>AI 模型</a></nav><nav class="nav"><a href="#design">設計新聞</a><a href="#knowledge">汽車新知</a><a href="#mood">情緒板</a><a href="./archive/">往期</a></nav><button class="toggle" id="tg" aria-label="切換深淺色">◐<span class="tl"> 深／淺</span></button></div></header>
 <main class="wrap">
 <div class="mast"><div class="kicker">Issue No. 001 · Global Car Design Digest</div>
 <h1>Car Design Daily<span class="zh">汽車設計日報</span></h1>

@@ -9,6 +9,29 @@ if "--site-url" in sys.argv: SITE = sys.argv[sys.argv.index("--site-url")+1].rst
 e = html.escape
 WD = ["週一","週二","週三","週四","週五","週六","週日"]
 
+def switcher(root, mode):
+    """Segmented section switcher shown on every page. root = relative path to site root."""
+    car = ' aria-current="page" class="on"' if mode == "car" else ''
+    ai = ' aria-current="page" class="on"' if mode == "ai" else ''
+    return (f'<nav class="modes" aria-label="切換日報"><a href="{root}"{car}><i class="dot"></i>汽車設計</a>'
+            f'<a href="{root}ai/"{ai}><i class="dot"></i>AI 模型</a></nav>')
+
+def topbar(root, mode, brand_href, nav_html=""):
+    brand = ('CAR DESIGN <span>DAILY</span>' if mode == "car" else 'AI MODEL <span>DAILY</span>')
+    return (f'<header class="topbar"><div class="wrap"><a class="brand" href="{brand_href}">{brand}</a>'
+            f'{switcher(root, mode)}{nav_html}<button class="toggle" id="tg" aria-label="切換深淺色">◐<span class="tl"> 深／淺</span></button></div></header>')
+
+def theme_init(mode):
+    key = "cdd-theme-ai" if mode == "ai" else "cdd-theme"
+    dflt = "'dark'" if mode == "ai" else "null"
+    return f"<script>(function(){{var t=localStorage.getItem('{key}')||{dflt};if(t)document.documentElement.setAttribute('data-theme',t);}})();</script>"
+
+def theme_toggle(mode):
+    key = "cdd-theme-ai" if mode == "ai" else "cdd-theme"
+    return ("<script>document.getElementById('tg').onclick=function(){var r=document.documentElement,c=r.getAttribute('data-theme');"
+            "var dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;var n=dark?'light':'dark';"
+            f"r.setAttribute('data-theme',n);localStorage.setItem('{key}',n);}};</script>")
+
 def issues():
     out = []
     for p in sorted(glob.glob(f"{ROOT}/issues/*/data.json"), reverse=True):
@@ -42,11 +65,9 @@ def page(d, base, all_issues, is_root):
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Noto+Sans+TC:wght@400;600&family=Noto+Serif+TC:wght@600;700&family=Playfair+Display:ital,wght@0,700;0,800;1,400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{css}">
-<script>(function(){{var t=localStorage.getItem('cdd-theme');if(t)document.documentElement.setAttribute('data-theme',t);}})();</script>
-</head><body>
-<header class="topbar"><div class="wrap"><a class="brand" href="{base}">CAR DESIGN <span>DAILY</span></a>
-<nav class="nav"><a href="#design">設計新聞</a><a href="#knowledge">汽車新知</a><a href="#mood">情緒板</a><a href="{base}archive/">往期</a></nav>
-<button class="toggle" id="tg" aria-label="切換深淺色">◐ 深／淺</button></div></header>
+{theme_init("car")}
+</head><body class="mode-car">
+{topbar(base, "car", base, f'<nav class="nav"><a href="#design">設計新聞</a><a href="#knowledge">汽車新知</a><a href="#mood">情緒板</a><a href="{base}archive/">往期</a></nav>')}
 <main class="wrap">
 <div class="mast"><div class="kicker">Issue No. {d['issue_no']:03d} · Global Car Design Digest</div>
 <h1>Car Design Daily<span class="zh">汽車設計日報</span></h1>
@@ -87,7 +108,7 @@ def page(d, base, all_issues, is_root):
     li = "".join(f'<li><a href="{base}issues/{x["date"]}/">No.{x["issue_no"]:03d} · {x["date"]}</a> — {e(x["design_news"][0]["title"])}</li>' for x in all_issues)
     H.append(f'<section class="archive" id="archive"><div class="sec-head"><span class="num">∞</span><h2>往期</h2><span class="en">Archive</span></div><ul>{li}</ul></section>')
     H.append(f'''</main><footer><div class="wrap">Car Design Daily · 每日整理全球汽車設計新聞、產業新知與隨機情緒板。內容摘要與分析為編輯整理，事實以原始來源為準；新聞圖片取自車廠官方新聞室／原報導，版權屬原權利人，均標示來源並連結原頁。<br>Issue {d["issue_no"]:03d} · {date}</div></footer>
-<script>document.getElementById('tg').onclick=function(){{var r=document.documentElement,c=r.getAttribute('data-theme');var dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;var n=dark?'light':'dark';r.setAttribute('data-theme',n);localStorage.setItem('cdd-theme',n);}};</script>
+{theme_toggle("car")}
 </body></html>''')
     return "\n".join(H)
 
@@ -95,9 +116,9 @@ def archive_page(all_issues):
     li = "".join(f'<li><a href="../issues/{x["date"]}/">No.{x["issue_no"]:03d} · {x["date"]} {x["weekday"]}</a> — {e(x["design_news"][0]["title"])}</li>' for x in all_issues)
     return f'''<!doctype html><html lang="zh-Hant-TW"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>往期 · Car Design Daily</title><link rel="stylesheet" href="../assets/style.css">
-<script>(function(){{var t=localStorage.getItem('cdd-theme');if(t)document.documentElement.setAttribute('data-theme',t);}})();</script></head>
-<body><header class="topbar"><div class="wrap"><a class="brand" href="../">CAR DESIGN <span>DAILY</span></a></div></header>
-<main class="wrap"><section class="archive"><div class="sec-head"><span class="num">∞</span><h2>往期</h2><span class="en">Archive</span></div><ul>{li}</ul></section></main></body></html>'''
+{theme_init("car")}</head>
+<body class="mode-car">{topbar("../", "car", "../")}
+<main class="wrap"><section class="archive"><div class="sec-head"><span class="num">∞</span><h2>往期</h2><span class="en">Archive</span></div><ul>{li}</ul></section></main>{theme_toggle("car")}</body></html>'''
 
 if __name__ == "__main__":
     al = issues()

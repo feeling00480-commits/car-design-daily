@@ -4,6 +4,8 @@
 
 - 線上（永久）：https://feeling00480-commits.github.io/car-design-daily/ （GitHub Pages，repo `feeling00480-commits/car-design-daily`，branch `main`、root）
 - 每期固定網址：`/issues/YYYY-MM-DD/`；首頁 `/` = 最新一期；`/archive/` = 往期列表
+- **AI 模型日報**（同一個 repo／網站）：`/ai/` = 最新一期、`/ai/issues/YYYY-MM-DD/`、`/ai/archive/`
+- 每頁頂端都有分段切換器「汽車設計｜AI 模型」（手機版在第二列、全寬）。兩個區塊共用 `assets/style.css` 的設計系統與 RWD 格線（<768 一欄、768–1199 兩欄、≥1200 三欄）；AI 區塊用 `body.mode-ai` 套上科技感深色配色（預設深色，深淺色偏好與汽車區分開記憶）。
 
 ## 結構
 ```
@@ -14,8 +16,16 @@ issues/YYYY-MM-DD/
   data.json                 ← 唯一需要手寫的內容檔
   img/*.webp                ← 情緒板圖像（≤1400px WebP）
   index.html                ← build.py 產生
+ai/
+  index.html                ← build_ai.py 產生（AI 最新一期）
+  archive/index.html        ← build_ai.py 產生
+  issues/YYYY-MM-DD/
+    data.json               ← AI 每日內容（唯一需要手寫的檔案）
+    img/*.webp              ← 來源 og:image（≤1600px WebP，<300KB）
+    index.html              ← build_ai.py 產生
 tools/
-  build.py                  ← data.json → HTML
+  build.py                  ← data.json → HTML（汽車；也提供共用的 topbar／切換器）
+  build_ai.py               ← ai/issues/*/data.json → AI 頁面
   publish.sh                ← build + git commit + push main（GitHub Pages 自動重新部署）
   publish-flypod.sh         ← 已棄用的 flypod 備案
   pick_themes.py, themes.json ← 隨機主題（避開近 10 期）
@@ -39,11 +49,31 @@ tools/
    - 沒有時用 `tools/moodart.py` 的做法（SVG 插畫＋numpy 材質）為新主題寫對應函式。
 4. 複製前一期 `data.json` 為模板，填入新內容（`issue_no` +1、`date`、`weekday`、`lede`）。
 5. 發佈：在 `/workspace/car-design-daily` 執行 `./tools/publish.sh "Issue 00N · YYYY-MM-DD"`
-   （= `python3 tools/build.py --site-url "$(cat .site-url)"` → `git add -A` → `git commit` → `git push origin main`）。
+   （= `build.py` + `build_ai.py`（--site-url "$(cat .site-url)"） → `git add -A` → `git commit` → `git push origin main`）。
    GitHub Pages 約 1–2 分鐘重新部署（可用 `gh api repos/feeling00480-commits/car-design-daily/pages/builds/latest` 查狀態）。
    之後用 WebFetch／curl 驗證 `https://feeling00480-commits.github.io/car-design-daily/`、`/issues/<date>/`、`/archive/` 以及所有新聞圖與情緒板圖片都回 200。
    - 所有站內連結必須是相對路徑（站點位於子路徑 `/car-design-daily/`）；og:image／canonical 用 `.site-url` 產生絕對網址。
 6. 預覽圖：`google-chrome --headless=new --no-sandbox --window-size=1280,2400 --screenshot=preview.png <URL>`
+
+## AI 模型日報：每日流程
+1. **來源資料**：`/workspace/ai-digest/reported.json`，取 `run_date` = 當天的項目。
+   - `category` = `watch:<model>` 放進「追蹤清單」（每個追蹤模型一張卡，列出該模型當天的所有更新）。
+   - `other` 放進「其他新聞」，`youtube` 放「推薦影片」。
+   - `seen-not-reported` **不當主新聞**，只在注意事項簡短帶過。
+2. **核對原文**：每則都用 WebFetch 讀過主連結（`url`），讀不到再讀 `alt_urls`，摘要只寫原文有的內容；官方頁擋抓取時要在 caveats 註明依哪個轉載來源整理。
+3. **代表圖（有就放，沒有就不放）**：抓主連結或 alt 的 `og:image`（curl 加瀏覽器 UA），轉成 ≤1600px WebP、<300KB，存到 `ai/issues/DATE/img/`，在 data.json 的 `image` 填 `file / alt / credit / credit_url`。
+   - 只用官方或來源頁自己的圖（官方宣傳圖、HF／GitHub 分享卡、專案示例、官方貼文影片縮圖）。
+   - **絕不用 AI 生成圖代表真實產品**；第三方部落格的 AI 插畫封面也不用。
+   - 沒有專屬圖（只有網站通用圖）就設 `"image": null`，頁面會註明「來源頁沒有可用的官方圖片」。
+   - YouTube 縮圖：`https://i.ytimg.com/vi/<id>/maxresdefault.jpg`。頁面先顯示縮圖，點擊才載入 youtube-nocookie 內嵌播放。
+4. **寫 `ai/issues/YYYY-MM-DD/data.json`**（可複製上一期再改），欄位如下：
+   - `date`、`weekday`、`issue_no`、`lede`
+   - `watch[]`：`{id, model, kind, status, updates[]}`；每則 update 是 `{title, date, summary, links[[名稱, url]], image|null}`
+   - `news[]`：`{id, org, tag, date, title, orig, summary, links, image|null}`
+   - `video`：`{title, orig, channel, youtube_id, url, date, thumb{file, alt, credit}}`
+   - `caveats[]`：未經驗證的自評數字、權重尚未釋出、授權、日期推估、讀不到的原文等
+5. **版面順序固定**：追蹤清單 → 其他新聞 → 推薦影片 → 注意事項 → 往期。
+6. **發布**：`./tools/publish.sh "AI 002 · YYYY-MM-DD"`（會同時重建汽車與 AI 兩區），約 1 分鐘後檢查 `/ai/`、`/ai/issues/DATE/`、`/ai/archive/`。
 
 ## 新聞來源清單
 - 設計專業：Car Design News、Interior Motives、Auto&Design（義）、Dezeen、Designboom、Design Week、Wallpaper*、Yanko Design
