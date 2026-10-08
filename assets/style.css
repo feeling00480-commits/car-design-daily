@@ -5,10 +5,11 @@
   --serif:"Noto Serif TC","Playfair Display","Songti TC","PMingLiU",serif;
   --sans:"Inter","Noto Sans TC","PingFang TC","Microsoft JhengHei",system-ui,sans-serif;
   --display:"Playfair Display","Noto Serif TC",serif;
+  --c-car:#c8643b; --c-ai:#0b8f7c;
   --maxw:1520px; --pad:clamp(16px,3.2vw,56px); --gap:clamp(16px,1.8vw,30px); --cardpad:clamp(18px,1.6vw,28px);
 }
-[data-theme="dark"]{--bg:#111114;--bg2:#1a1a1f;--ink:#ece9e3;--muted:#9a968e;--line:#2c2c33;--accent:#f08a5d;--card:#17171b}
-@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#111114;--bg2:#1a1a1f;--ink:#ece9e3;--muted:#9a968e;--line:#2c2c33;--accent:#f08a5d;--card:#17171b}}
+[data-theme="dark"]{--c-car:#f08a5d;--c-ai:#36e0c4;--bg:#111114;--bg2:#1a1a1f;--ink:#ece9e3;--muted:#9a968e;--line:#2c2c33;--accent:#f08a5d;--card:#17171b}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--c-car:#f08a5d;--c-ai:#36e0c4;--bg:#111114;--bg2:#1a1a1f;--ink:#ece9e3;--muted:#9a968e;--line:#2c2c33;--accent:#f08a5d;--card:#17171b}}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;font-size:16px;overflow-x:hidden;transition:background .3s,color .3s}
@@ -163,19 +164,11 @@ footer{margin-top:60px;border-top:1px solid var(--ink);padding:28px 0 60px;font-
   .nav{display:none}
   .topbar .wrap{flex-wrap:wrap;padding-top:8px;padding-bottom:8px}
   .toggle{margin-left:auto}.toggle .tl{display:none}
-  .modes{order:3;width:100%}.modes a{flex:1;justify-content:center;padding:7px 10px;font-size:14px}
   .sec-head .en{display:none}
   .analysis li{grid-template-columns:1fr;gap:4px}
   .analysis li b{justify-self:start}
 }
 
-/* ---------- section switcher (汽車設計 | AI 模型) ---------- */
-.modes{display:inline-flex;flex-shrink:0;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--bg2);gap:2px}
-.modes a{display:flex;align-items:center;gap:8px;padding:5px 15px;border-radius:999px;font-size:13.5px;font-weight:600;color:var(--muted);text-decoration:none;white-space:nowrap;transition:background .2s,color .2s}
-.modes a:hover{color:var(--ink)}
-.modes a.on{background:var(--ink);color:var(--bg)}
-.modes .dot{width:7px;height:7px;border-radius:50%;background:#c8643b;flex-shrink:0}
-.modes a+a .dot{background:#2fd3b9}
 .toggle{flex-shrink:0}
 @media (min-width:768px) and (max-width:1199px){.nav{gap:16px;font-size:13px}}
 
@@ -242,6 +235,35 @@ body.mode-ai{--bg:#f3f5f9;--bg2:#e6eaf1;--ink:#0d1320;--muted:#5a6577;--line:#d3
 .caveats li{position:relative;padding:12px 14px 12px 40px;border:1px solid var(--line);border-radius:8px;background:var(--card);font-size:14.5px}
 .caveats li::before{content:"!";position:absolute;left:12px;top:12px;width:18px;height:18px;border-radius:50%;background:color-mix(in srgb,#f5a524 22%,transparent);color:#f5a524;font:700 12px/18px var(--mono);text-align:center}
 
-@media (max-width:767px){.modes a{padding:7px 10px;font-size:14px}.wcard,.story{border-radius:8px}}
+@media (max-width:767px){.wcard,.story{border-radius:8px}}
 .play>img{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover}
-@media (min-width:768px) and (max-width:1023px){.toggle .tl{display:none}.nav{gap:13px}.modes a{padding:5px 12px}}
+@media (min-width:768px) and (max-width:1023px){.toggle .tl{display:none}.nav{gap:13px}}
+
+/* ---------- section switcher: kicker-style labels + sliding frame ---------- */
+.modes{position:relative;display:inline-grid;grid-template-columns:1fr 1fr;flex-shrink:0;--sw:var(--c-car)}
+.modes[data-pos="ai"]{--sw:var(--c-ai)}
+.modes a{position:relative;z-index:1;display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:1px;padding:5px 16px 6px;text-decoration:none;color:var(--muted);white-space:nowrap;line-height:1.2;transition:color .35s ease}
+.modes a b{font-family:var(--sans);font-size:10.5px;font-weight:600;letter-spacing:.26em;text-transform:uppercase;transition:color .35s ease}
+.modes a span{font-family:var(--sans);font-size:12.5px;letter-spacing:.14em;color:var(--muted);transition:color .35s ease}
+.modes a:hover b,.modes a:hover span{color:var(--ink)}
+.modes a:focus-visible{outline:1px dashed var(--sw);outline-offset:2px}
+.modes[data-pos="car"] a[data-mode="car"] b,.modes[data-pos="ai"] a[data-mode="ai"] b{color:var(--sw)}
+.modes[data-pos="car"] a[data-mode="car"] span,.modes[data-pos="ai"] a[data-mode="ai"] span{color:var(--ink)}
+/* the frame: half the grid wide, slides with transform */
+.mind{position:absolute;z-index:0;top:0;bottom:0;left:0;width:50%;border:1px solid var(--sw);border-radius:2px;
+  background:color-mix(in srgb,var(--sw) 7%,transparent);pointer-events:none;
+  transition:transform .38s cubic-bezier(.65,0,.35,1),border-color .38s ease,background-color .38s ease}
+.mind::before,.mind::after{content:"";position:absolute;width:5px;height:5px;background:var(--sw);transition:background-color .38s ease}
+.mind::before{left:-3px;top:-3px}.mind::after{right:-3px;bottom:-3px}
+.modes[data-pos="ai"] .mind{transform:translateX(100%)}
+.modes.still .mind,.modes.still a,.modes.still b,.modes.still span{transition:none}
+.modes.arrive .mind{animation:mind-in .32s ease-out}
+@keyframes mind-in{from{opacity:.25;box-shadow:0 0 0 4px color-mix(in srgb,var(--sw) 22%,transparent)}to{opacity:1;box-shadow:0 0 0 0 transparent}}
+@media (prefers-reduced-motion:reduce){.mind,.modes a,.modes b,.modes span{transition:none}.modes.arrive .mind{animation:none}}
+@media (max-width:767px){
+  .modes{order:3;width:100%;margin-top:2px}
+  .modes a{flex-direction:row;align-items:baseline;justify-content:center;gap:8px;padding:8px 6px}
+  .modes a b{font-size:10px;letter-spacing:.2em}
+  .modes a span{font-size:13px;letter-spacing:.1em}
+}
+@media (min-width:768px){.topbar .brand{min-width:182px}}

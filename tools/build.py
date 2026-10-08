@@ -9,12 +9,29 @@ if "--site-url" in sys.argv: SITE = sys.argv[sys.argv.index("--site-url")+1].rst
 e = html.escape
 WD = ["週一","週二","週三","週四","週五","週六","週日"]
 
+SWITCH_JS = """<script>(function(){var n=document.querySelector('.modes');if(!n)return;var cur=n.getAttribute('data-mode');
+var rm=window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches;
+function reset(){n.classList.add('still');n.setAttribute('data-pos',cur);void n.offsetWidth;n.classList.remove('still');}
+var from=null;try{from=sessionStorage.getItem('cdd-switch-from');sessionStorage.removeItem('cdd-switch-from');}catch(_){}
+if(from&&from!==cur&&!rm)n.classList.add('arrive');
+window.addEventListener('pageshow',function(ev){if(ev.persisted)reset();});
+function dest(a){var u=new URL(a.getAttribute('href'),location.href);if(u.protocol==='file:'&&u.pathname.slice(-1)==='/')u.pathname+='index.html';return u.href;}
+Array.prototype.forEach.call(n.querySelectorAll('a[data-mode]'),function(a){a.addEventListener('click',function(ev){
+ if(ev.defaultPrevented||ev.button!==0||ev.metaKey||ev.ctrlKey||ev.shiftKey||ev.altKey)return;
+ var to=a.getAttribute('data-mode'),url=dest(a);ev.preventDefault();
+ if(to===cur||rm){location.href=url;return;}
+ try{sessionStorage.setItem('cdd-switch-from',cur);}catch(_){}
+ n.setAttribute('data-pos',to);var done=false,go=function(){if(done)return;done=true;location.href=url;};
+ n.querySelector('.mind').addEventListener('transitionend',function(e){if(e.propertyName==='transform')go();});setTimeout(go,520);});});})();</script>"""
+
 def switcher(root, mode):
-    """Segmented section switcher shown on every page. root = relative path to site root."""
-    car = ' aria-current="page" class="on"' if mode == "car" else ''
-    ai = ' aria-current="page" class="on"' if mode == "ai" else ''
-    return (f'<nav class="modes" aria-label="切換日報"><a href="{root}"{car}><i class="dot"></i>汽車設計</a>'
-            f'<a href="{root}ai/"{ai}><i class="dot"></i>AI 模型</a></nav>')
+    """Segmented section switcher shown on every page. root = relative path to site root.
+    Plain links (work without JS); SWITCH_JS slides the frame (.mind) to the target, then navigates."""
+    def a(m, href, en, zh):
+        cur = ' aria-current="page" class="on"' if m == mode else ''
+        return f'<a href="{href}" data-mode="{m}"{cur}><b>{en}</b><span>{zh}</span></a>'
+    return (f'<nav class="modes" data-mode="{mode}" data-pos="{mode}" aria-label="切換日報"><i class="mind" aria-hidden="true"></i>'
+            f'{a("car", root, "Car Design", "汽車設計")}{a("ai", root + "ai/", "AI Models", "AI 模型")}</nav>')
 
 def topbar(root, mode, brand_href, nav_html=""):
     brand = ('CAR DESIGN <span>DAILY</span>' if mode == "car" else 'AI MODEL <span>DAILY</span>')
@@ -28,7 +45,7 @@ def theme_init(mode):
 
 def theme_toggle(mode):
     key = "cdd-theme-ai" if mode == "ai" else "cdd-theme"
-    return ("<script>document.getElementById('tg').onclick=function(){var r=document.documentElement,c=r.getAttribute('data-theme');"
+    return SWITCH_JS + ("<script>document.getElementById('tg').onclick=function(){var r=document.documentElement,c=r.getAttribute('data-theme');"
             "var dark=c?c==='dark':matchMedia('(prefers-color-scheme: dark)').matches;var n=dark?'light':'dark';"
             f"r.setAttribute('data-theme',n);localStorage.setItem('{key}',n);}};</script>")
 

@@ -5,7 +5,7 @@
 - 線上（永久）：https://feeling00480-commits.github.io/car-design-daily/ （GitHub Pages，repo `feeling00480-commits/car-design-daily`，branch `main`、root）
 - 每期固定網址：`/issues/YYYY-MM-DD/`；首頁 `/` = 最新一期；`/archive/` = 往期列表
 - **AI 模型日報**（同一個 repo／網站）：`/ai/` = 最新一期、`/ai/issues/YYYY-MM-DD/`、`/ai/archive/`
-- 每頁頂端都有分段切換器「汽車設計｜AI 模型」（手機版在第二列、全寬）。兩個區塊共用 `assets/style.css` 的設計系統與 RWD 格線（<768 一欄、768–1199 兩欄、≥1200 三欄）；AI 區塊用 `body.mode-ai` 套上科技感深色配色（預設深色，深淺色偏好與汽車區分開記憶）。
+- 每頁頂端都有切換器「CAR DESIGN 汽車設計｜AI MODELS AI 模型」（kicker 字體樣式，手機版在第二列、全寬）。外框（`.mind`）會滑到目標再換頁（0.38s；`prefers-reduced-motion` 時直接換頁），沒有 JS 時就是一般連結。程式在 `tools/build.py` 的 `switcher()` 和 `SWITCH_JS`。兩個區塊共用 `assets/style.css` 的設計系統與 RWD 格線（<768 一欄、768–1199 兩欄、≥1200 三欄）；AI 區塊用 `body.mode-ai` 套上科技感深色配色（預設深色，深淺色偏好與汽車區分開記憶）。
 
 ## 結構
 ```
