@@ -1,0 +1,11 @@
+public/
+node_modules/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.flypod-site
+.flypod/
+*.log
+.DS_Store
+tmp/
