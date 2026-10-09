@@ -55,12 +55,26 @@ def issues():
         out.append(json.load(open(p, encoding="utf-8")))
     return out
 
-DIAGRAM = '''<svg class="diagram" viewBox="0 0 520 150" width="100%" role="img" aria-label="dash-to-axle 示意圖">
-<path d="M30,112 C30,96 40,88 70,84 L170,76 L230,46 L380,44 C430,46 460,62 480,80 L492,112 Z" fill="none" stroke="currentColor" stroke-width="2.5"/>
-<circle cx="110" cy="114" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="420" cy="114" r="20" fill="none" stroke="currentColor" stroke-width="2.5"/>
-<line x1="110" y1="20" x2="110" y2="140" stroke="#f08a5d" stroke-dasharray="4 4" stroke-width="1.5"/><line x1="200" y1="20" x2="200" y2="140" stroke="#f08a5d" stroke-dasharray="4 4" stroke-width="1.5"/>
-<line x1="110" y1="28" x2="200" y2="28" stroke="#f08a5d" stroke-width="2"/><text x="155" y="20" fill="#f08a5d" font-size="12" text-anchor="middle">dash-to-axle</text>
-<text x="200" y="146" fill="currentColor" font-size="11" text-anchor="middle" opacity=".7">A 柱底／儀表板</text><text x="110" y="146" fill="currentColor" font-size="11" text-anchor="middle" opacity=".7">前軸</text></svg>'''
+def term_diagram(d, all_issues):
+    """Per-issue term illustration: issues/<date>/<term.diagram> (inline SVG, class="diagram").
+    Fails the build if missing, or if the same SVG is reused for a different term."""
+    t = d["term"]; date = d["date"]
+    fn = t.get("diagram")
+    if not fn:
+        sys.exit(f"[build] ERROR {date}: term.diagram missing — draw a new illustration for '{t['name']}' (issues/{date}/term.svg)")
+    path = f"{ROOT}/issues/{date}/{fn}"
+    if not os.path.exists(path):
+        sys.exit(f"[build] ERROR {date}: term illustration not found: {path}")
+    svg = open(path, encoding="utf-8").read().strip()
+    if 'class="diagram"' not in svg:
+        sys.exit(f"[build] ERROR {date}: {path} must be an <svg class=\"diagram\"> element")
+    for o in all_issues:
+        if o["date"] == date or "diagram" not in o.get("term", {}): continue
+        op = f"{ROOT}/issues/{o['date']}/{o['term']['diagram']}"
+        if os.path.exists(op) and open(op, encoding="utf-8").read().strip() == svg and o["term"]["name"] != t["name"]:
+            sys.exit(f"[build] ERROR {date}: term '{t['name']}' reuses the illustration of {o['date']} ('{o['term']['name']}'). Draw a new one.")
+    return svg
+
 
 def page(d, base, all_issues, is_root):
     date = d["date"]; y, m, dd = date.split("-")
@@ -110,7 +124,7 @@ def page(d, base, all_issues, is_root):
         src = "".join(f'<a href="{e(u)}" target="_blank" rel="noopener">{e(n)} ↗</a>' for n, u in k["sources"])
         H.append(f'<article class="k"><span class="tag">{e(k["tag"])}</span><span class="date" style="font-size:12px;color:var(--muted);margin-left:8px">{e(k["date"])}</span><h3>{e(k["title"])}</h3><p>{e(k["summary"])}</p><div class="src">{src}</div></article>')
     t = d["term"]
-    H.append(f'</div><div class="term"><div><div class="lab">今日設計名詞 · Term of the Day</div><h3>{e(t["name"])}</h3><div class="zh">{e(t["zh"])}</div>{DIAGRAM}</div><p>{e(t["body"])}</p></div></section>')
+    H.append(f'</div><div class="term"><div><div class="lab">今日設計名詞 · Term of the Day</div><h3>{e(t["name"])}</h3><div class="zh">{e(t["zh"])}</div>{term_diagram(d, all_issues)}</div><p>{e(t["body"])}</p></div></section>')
     # mood boards
     H.append('<section id="mood"><div class="sec-head"><span class="num">03</span><h2>情緒板</h2><span class="en">Mood Boards</span></div>')
     H.append('<p class="note">情緒板裡的車輛都是原創虛構的概念設計，不代表任何真實車款或品牌。圖像為程式生成的插畫和材質紋理，主題每期隨機抽選。</p>')

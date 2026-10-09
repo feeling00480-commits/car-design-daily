@@ -1,0 +1,28 @@
+<svg class="diagram" viewBox="0 0 520 190" width="100%" role="img" aria-label="Heritage cue 傳承元素示意圖：左為舊車、右為新車，以虛線連接沿用的掀起式頭燈、C 柱線條與徽章">
+<text x="125" y="16" fill="currentColor" font-size="11" text-anchor="middle" opacity=".7">原作 1990</text>
+<text x="395" y="16" fill="currentColor" font-size="11" text-anchor="middle" opacity=".7">新作 2026</text>
+<line x1="260" y1="24" x2="260" y2="150" stroke="currentColor" stroke-opacity=".25" stroke-width="1"/>
+<!-- old car: upright wedge, raised pop-up lamp -->
+<path d="M18,118 L22,100 L60,92 L96,66 L168,62 L206,82 L232,90 L234,118 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M100,70 L164,66 L190,84 L96,86 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+<path d="M172,64 L200,84" stroke="currentColor" stroke-width="2.5"/>
+<rect x="30" y="82" width="22" height="9" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<circle cx="62" cy="118" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="192" cy="118" r="17" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<circle cx="24" cy="108" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+<!-- new car: lower, wider stance, LED pop-up -->
+<path d="M282,118 L284,104 L322,96 L360,72 L438,68 L478,88 L504,96 L506,118 Z" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linejoin="round"/>
+<path d="M364,76 L434,72 L462,90 L358,92 Z" fill="none" stroke="currentColor" stroke-width="1.5" opacity=".6"/>
+<path d="M442,70 L472,90" stroke="currentColor" stroke-width="2.5"/>
+<rect x="294" y="89" width="22" height="6" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+<line x1="297" y1="92" x2="313" y2="92" stroke="#f08a5d" stroke-width="2"/>
+<circle cx="328" cy="118" r="19" fill="none" stroke="currentColor" stroke-width="2.5"/><circle cx="466" cy="118" r="19" fill="none" stroke="currentColor" stroke-width="2.5"/>
+<circle cx="287" cy="109" r="4" fill="#f08a5d" stroke="currentColor" stroke-width="1.5"/>
+<!-- heritage links -->
+<path d="M41,80 C120,30 220,30 305,86" fill="none" stroke="#f08a5d" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="175" y="38" fill="#f08a5d" font-size="11" text-anchor="middle">① 掀起式頭燈 → LED 化</text>
+<path d="M186,72 C260,46 380,46 457,78" fill="none" stroke="#f08a5d" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="330" y="52" fill="#f08a5d" font-size="11" text-anchor="middle">② C 柱曲線</text>
+<path d="M24,113 C110,160 210,160 287,114" fill="none" stroke="#f08a5d" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="155" y="160" fill="#f08a5d" font-size="11" text-anchor="middle">③ 徽章 → 發光標誌</text>
+<text x="260" y="182" fill="currentColor" font-size="10.5" text-anchor="middle" opacity=".7">只沿用最有情感的細節；比例、材質、光源全部重做</text>
+</svg>

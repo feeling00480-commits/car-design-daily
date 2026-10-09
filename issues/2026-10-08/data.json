@@ -1,510 +1,511 @@
 {
-  "date": "2026-10-08",
-  "weekday": "週四",
-  "issue_no": 1,
-  "lede": "本期焦點：Jaguar 以 Type 01 重新定義自己，BMW Neue Klasse 再添 iX4，巴黎車展（10/12 起）前夕，Renault、Porsche、Alpine 紛紛預告概念車。比例、燈號與「去 SUV 化」是這週最值得看的三條設計主線。",
-  "design_news": [
-    {
-      "id": "jaguar-type-01",
-      "tag": "量產車 · 電動 GT",
-      "date": "2026-10-07",
-      "brand": "Jaguar",
-      "title": "Jaguar Type 01 正式發表：品牌重生後的第一台車",
-      "orig": "JLR unveils new Jaguar Type 01",
-      "summary": "Jaguar 10/7 在紐約發表 Type 01，是品牌重啟後第一款量產車，也是第一台建構在專屬 JEA（Jaguar Electric Architecture）平台上的四門豪華電動 GT。三電機合計約 1,015 hp，預計 2027 年在英國 Solihull 投產，英國售價 £130,000 起、美國 US$130,500 起。",
-      "analysis": [
-        [
-          "比例",
-          "延續 Type 00 概念車的古典 Jaguar GT 比例：極長車頭、座艙大幅後移，尾部收得非常戲劇化。Car and Driver 形容「引擎蓋長到看不見盡頭」。"
-        ],
-        [
-          "視野／UX",
-          "沒有後擋風玻璃，改用數位 ClearSight 後視螢幕，而且不放在傳統車內後視鏡的位置，而是擋風玻璃底部中央，與兩側後視鏡同高，視線移動更少。"
-        ],
-        [
-          "室內建築",
-          "一條貫穿前後的中央「脊樑」(spine) 把座艙切成四個獨立空間，打破一般儀表台的橫向構圖，強調縱深。前端收在一塊手機大小的空調觸控面板。"
-        ],
-        [
-          "CMF",
-          "以洞石 (travertine) 與手工織品為靈感，脊樑與門板頂端使用黃銅質感飾條，並採用 Kvadrat、Ultrafabrics 面料；引擎蓋上的百葉線條在儀表台紋理上重複出現。"
-        ],
-        [
-          "取捨",
-          "後座進出與空間偏緊，內裝設計主管 Tom Holden 坦言這是為了守住外型比例的刻意選擇：想面面俱到，最後只會做出一台平庸的車。"
-        ]
-      ],
-      "sources": [
-        [
-          "JLR Media",
-          "https://media.jlr.com/news/2026/10/designed-engineered-and-manufactured-britain-jlr-unveils-new-jaguar-type-01"
-        ],
-        [
-          "Car Design News",
-          "https://www.cardesignnews.com/cars/type-01-the-most-important-jaguar-ever-as-explained-by-its-designers-but-not-gerry/2747068"
-        ],
-        [
-          "Design Week",
-          "https://www.designweek.co.uk/the-in-depth-story-behind-the-jaguar-type-01-design-revolution/"
-        ],
-        [
-          "Car and Driver",
-          "https://www.caranddriver.com/news/a74036834/2028-jaguar-type-01-revealed/"
-        ]
-      ],
-      "image": {
-        "file": "news-jaguar-type-01.webp",
-        "alt": "Jaguar Type 01 前側 34 視角，藍灰色車身",
-        "credit": "JLR Media",
-        "credit_url": "https://media.jlr.com/news/2026/10/designed-engineered-and-manufactured-britain-jlr-unveils-new-jaguar-type-01"
-      }
-    },
-    {
-      "id": "bmw-ix4",
-      "tag": "量產車 · Neue Klasse",
-      "date": "2026-10-07",
-      "brand": "BMW",
-      "title": "BMW iX4 登場：Neue Klasse 的轎跑休旅版",
-      "orig": "BMW's iX4 SUV is a 428-mile defensive weapon against China's EV takeover",
-      "summary": "iX4 是 Neue Klasse 平台繼 iX3、i3 之後的第三款車，也是 iX3 的轎跑休旅版。iX4 50 xDrive 2027 年 3 月上市，美國售價 US$66,200 起；EPA 續航最高 428 英里，採 800V 架構、最高 400 kW 快充，10–80% 只要約 21 分鐘。",
-      "analysis": [
-        [
-          "輪廓",
-          "長軸距、短前後懸、溜背車頂加上整合式尾翼，是典型的 coupé-SUV 比例，和 iX3 共用 Neue Klasse 的平整面與俐落線條。"
-        ],
-        [
-          "燈號",
-          "發光雙腎格柵與雙頭燈整合成單一圖形，尾燈改為細長 L 形，用光取代鍍鉻當作品牌識別。"
-        ],
-        [
-          "UX",
-          "Panoramic iDrive 把資訊投影在整條擋風玻璃下緣，取代傳統儀表；17.9 吋異形 (free-cut) 中控螢幕的小工具可以直接拖拉到擋風玻璃顯示區。"
-        ],
-        [
-          "品牌方向",
-          "Neue Klasse 的減法語彙正往全車系擴散（連 7 系列都會跟進），BMW 用這套語言對抗中國品牌的科技感攻勢。"
-        ]
-      ],
-      "sources": [
-        [
-          "The Verge",
-          "https://www.theverge.com/transportation/1006837/bmw-ix4-ev-range-price-specs-tesla-china"
-        ],
-        [
-          "BMW PressClub",
-          "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
-        ]
-      ],
-      "image": {
-        "file": "news-bmw-ix4.webp",
-        "alt": "兩台 BMW iX4 停在海岸邊（灰色與紅色）",
-        "credit": "BMW Group PressClub",
-        "credit_url": "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
-      }
-    },
-    {
-      "id": "vw-mission-efficiency",
-      "tag": "概念車 · 空力",
-      "date": "2026-10-05",
-      "brand": "Volkswagen",
-      "title": "VW Mission Efficiency：風阻 0.158，實用性卻比 Golf 好",
-      "orig": "First sight: Volkswagen's Mission Efficiency streamliner is more practical than it looks",
-      "summary": "以未來 ID. Polo 平台打造的 2+2 流線型概念車，官方宣稱風阻係數只有 0.158，後座放倒後行李空間超過 1,200 公升。Car Design News 在 Loh Collection 的 Car Design Classic 活動上訪問了 VW 歐洲外觀設計主管 Stefan Wallburg。",
-      "analysis": [
-        [
-          "面的處理",
-          "靈感來自飛機：側面一道銳利稜線加上下方的陰影帶，讓上半部反射天空、下半部反射路面，視覺上「扁了半公尺」。車頂比 ID. Polo 低 10 cm，正面迎風面積只比機車大一點。"
-        ],
-        [
-          "輪拱與輪圈",
-          "後輪遮罩呼應 Porsche 917；輪拱內緣精準貼合「wheel potato」（車輪在轉向與懸吊行程中掃出的包絡面）。五輻螺旋槳式輪圈用外環延伸到胎壁，讓輪子看起來更大。"
-        ],
-        [
-          "務實細節",
-          "沒用 XL1 的攝影機後視鏡，而是把傳統後視鏡融進造型，只增加約 4 counts 風阻，也省去車內螢幕的成本；車門內移除電子元件，提高回收性。"
-        ],
-        [
-          "燈號",
-          "頭燈做成眼睛造型（內有虹膜線條），用翼狀元素連接發光廠徽，這是 VW 在全球通用的識別。"
-        ]
-      ],
-      "sources": [
-        [
-          "Car Design News",
-          "https://www.cardesignnews.com/cars/first-sight-volkswagens-mission-efficiency-streamliner-is-more-practical-than-it-looks/2746766"
-        ]
-      ],
-      "image": {
-        "file": "news-vw-mission-efficiency.webp",
-        "alt": "Volkswagen Mission Efficiency 流線型概念車側面",
-        "credit": "Volkswagen Newsroom",
-        "credit_url": "https://www.volkswagen-newsroom.com/en/press-releases/mission-efficiency-volkswagen-presents-the-worlds-most-efficient-near-production-electric-car-20691"
-      }
-    },
-    {
-      "id": "renault-e-space",
-      "tag": "概念車 · 巴黎車展",
-      "date": "2026-10-06",
-      "brand": "Renault",
-      "title": "Renault E-Space Concept：用 one-box 單廂車對抗 SUV",
-      "orig": "E-Space Concept: Renault reinvents the voiture à vivre",
-      "summary": "向 1984 年初代 Espace 致敬的電動家庭車概念，長 4.70 m、寬 2.02 m、高 1.67 m，23 吋輪圈推到四個角落，車色是 black rubé。10/12 在巴黎車展首發，官方表示目前沒有量產計畫。",
-      "analysis": [
-        [
-          "輪廓",
-          "刻意不走 SUV：離地低、腰線低，擋風玻璃從引擎蓋一路順下來，回到 MPV 的單廂 (one-box) 輪廓，把空間留給乘客。"
-        ],
-        [
-          "燈號",
-          "前後都用寬幅 U 形燈帶勾勒車身輪廓，車頭中央是由像素構成的發光菱形，看起來像懸浮在空中。"
-        ],
-        [
-          "室內",
-          "平坦地板上配置三排六張同尺寸獨立座椅，可微幅旋轉，也能圍著大桌子排列。OpenR Panorama 曲面螢幕寬 1,130 mm、高 110 mm，橫跨整個座艙、取代傳統儀表台，將用在 Renault 未來的高階電動車上。"
-        ]
-      ],
-      "sources": [
-        [
-          "Renault Media",
-          "https://media.renault.com/e-space-concept-renault-reinvents-the-voiture-a-vivre-and-sets-a-date-for-the-2026-paris-motor-show/?lang=eng"
-        ],
-        [
-          "Electrek",
-          "https://electrek.co/2026/10/06/electric-minivan-bringing-80s-icon-back-to-life/"
-        ]
-      ],
-      "image": {
-        "file": "news-renault-e-space.webp",
-        "alt": "Renault E-Space Concept 單廂電動家庭車，停在沙漠",
-        "credit": "Renault Media",
-        "credit_url": "https://media.renault.com/e-space-concept-renault-reinvents-the-voiture-a-vivre-and-sets-a-date-for-the-2026-paris-motor-show/?lang=eng"
-      }
-    },
-    {
-      "id": "hyundai-tucson",
-      "tag": "量產車 · 設計訪談",
-      "date": "2026-10-05",
-      "brand": "Hyundai",
-      "title": "第五代 Hyundai Tucson：Art of Steel 往高級感走",
-      "orig": "Hyundai talks Tucson and 'intuitive' design",
-      "summary": "全新第五代 Tucson 外型更方正銳利，前後燈組全部換新。Car Design News 訪問 Hyundai 歐洲首席設計師 Eduardo Ramirez 和產品副總 Christopher McKinnon，談「以人為本」與去除不必要配備的設計思路。",
-      "analysis": [
-        [
-          "量體",
-          "延續 Art of Steel 語彙，但放大量體與翼子板，營造厚實、具保護感的姿態；後方像 80 年代西裝「墊肩」的肩線，金屬沖壓深度創 Hyundai 紀錄，是設計和製造團隊反覆拉鋸的成果。"
-        ],
-        [
-          "室內",
-          "大空間、柔和氛圍燈與較圓潤的造型，中和外觀的強硬感；車窗用雙層玻璃，打造安靜的 cocoon；後門幾乎可以開到直角。"
-        ],
-        [
-          "UX",
-          "強調「直覺」而不是堆配備數量：不必移開視線就能調整後視鏡，配備後座兒童遺留偵測、拖車倒車輔助等實用功能。"
-        ],
-        [
-          "品牌定位",
-          "往上提升質感，但與 Genesis 在材質、動力和懸吊上保持區隔。"
-        ]
-      ],
-      "sources": [
-        [
-          "Car Design News",
-          "https://www.cardesignnews.com/cars/hyundai-talks-tucson-and-intuitive-design/2746634"
-        ]
-      ],
-      "image": {
-        "file": "news-hyundai-tucson.webp",
-        "alt": "第五代 Hyundai Tucson 在沙丘上行駛",
-        "credit": "Hyundai Worldwide Newsroom",
-        "credit_url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001280"
-      }
-    },
-    {
-      "id": "porsche-mission-s",
-      "tag": "預告 · 超跑",
-      "date": "2026-10-07",
-      "brand": "Porsche",
-      "title": "Porsche 預告 Mission S：定位在 911 之上的中置引擎超跑",
-      "orig": "Porsche Mission S Supercar Picks Up Where The 918 Left Off",
-      "summary": "Porsche 在 Weissach 公布 2035 年前的策略「Sportwagenschmiede 35」，同時預告中置引擎超跑概念 Mission S，形容它是「our love letter to the sports car」，未來量產版將定位在 911 之上，延續 918 Spyder 的角色。報導指出將在巴黎車展期間（10/15）正式亮相。",
-      "analysis": [
-        [
-          "目前可見",
-          "預告影片只露出 LED 頭燈、模糊的尾燈和中央鎖輪圈；Carscoops 推測可能延續 2023 年 Mission X 概念車的設計線索。"
-        ],
-        [
-          "品牌方向",
-          "策略核心是「Value over Volume」：車型變體減少 20%，每條產品線都要有更多 911 DNA，設計資源會集中在辨識度更高的情感型產品。"
-        ]
-      ],
-      "sources": [
-        [
-          "Carscoops",
-          "https://www.carscoops.com/2026/10/porsche-mission-s-supercar-picks-up-where-the-918-left-off/"
-        ],
-        [
-          "Road & Track",
-          "https://www.roadandtrack.com/news/a74066848/porsche-reveals-plans-potential-halo-supercar-more-exclusive-911-variants/"
-        ]
-      ],
-      "image": {
-        "file": "news-porsche-mission-s.webp",
-        "alt": "Porsche Mission S 官方預告圖（只露出廠徽）",
-        "credit": "Porsche（Mission S 預告頁）",
-        "credit_url": "https://www.porsche.com/international/models/mission-s-preview/"
-      }
-    },
-    {
-      "id": "alpine-ps1",
-      "tag": "預告 · 巴黎車展",
-      "date": "2026-10-06",
-      "brand": "Alpine",
-      "title": "Alpine 將揭曉 PS1 概念車，並預告第三代 A110",
-      "orig": "Alpine to unveil PS1 at Paris Motor Show",
-      "summary": "Alpine 將在 10/12 巴黎車展揭曉代號 PS1（Projet Spécial 1）的概念車，目前只公開一張頭燈影像。同場還有預告第三代 A110 的雕塑作品 A110 Sculpture，以及 A290、A390 的新顏色與內裝個人化選項。",
-      "analysis": [
-        [
-          "燈號",
-          "只用一顆頭燈預告整台車，說明燈號已經成為品牌最核心的識別元素。"
-        ],
-        [
-          "A110 Sculpture",
-          "以藍色薄紗包覆，象徵輕量和氣流；保留初代 Berlinette 的比例與站姿，靈感部分來自協和號突破音速的瞬間，建構在全新 Alpine Performance Platform (APP) 上。"
-        ],
-        [
-          "CMF",
-          "Atelier Alpine 個人化計畫首次擴展到 A290 和 A390，A390 GTS 推出新色 Bleu Tempête Mat。"
-        ]
-      ],
-      "sources": [
-        [
-          "Alpine Media",
-          "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
-        ]
-      ],
-      "image": {
-        "file": "news-alpine-ps1.webp",
-        "alt": "Alpine PS1 概念車官方預告圖：頭燈特寫",
-        "credit": "Alpine Media",
-        "credit_url": "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
-      }
-    }
-  ],
-  "knowledge": [
-    {
-      "tag": "召回 · 製造",
-      "date": "2026-10-05",
-      "title": "VW 集團召回約 400 萬輛，Dieselgate 以來規模最大",
-      "summary": "原因是轉向系統的一顆螺絲可能腐蝕，長期下來會影響轉向功能。依德國 KBA 數據，VW 約 216 萬輛、Audi 約 70 萬輛，另有 Škoda 超過 100 萬輛、SEAT 約 20 萬輛。VW 表示這是預防性措施，更換螺絲不超過一小時。",
-      "sources": [
-        [
-          "Insurance Journal / Reuters",
-          "https://www.insurancejournal.com/news/international/2026/10/05/887990.htm"
-        ]
-      ]
-    },
-    {
-      "tag": "電池",
-      "date": "2026-10-06",
-      "title": "Samsung SDI × EcoPro BM：硫化物全固態電池目標 2027 年商用",
-      "summary": "兩家韓國公司簽署 MOU，從前期研發、品質驗證一路合作到量產體系，目標 2027 年商用化硫化物全固態電池。Samsung SDI 負責電芯和量產技術，EcoPro BM 負責正極材料和固態電解質，目前已有年產 40 噸的試產線。",
-      "sources": [
-        [
-          "Chosun Biz",
-          "https://biz.chosun.com/en/en-industry/2026/10/06/6WQMG5S3YZBOPJPFWGJVXVLGKA/"
-        ]
-      ]
-    },
-    {
-      "tag": "自動駕駛",
-      "date": "2026-10-07",
-      "title": "Waymo 在底特律開始無安全駕駛員的全無人測試",
-      "summary": "Waymo 是第一家在密西根做自動駕駛叫車的公司，初期只開放給員工搭乘。主力車款是中國製造的 Zeekr Ojai，搭載第六代 Waymo Driver，硬體成本比第五代約低一半，也能應付冬季路況。分析師預估年底前小規模開放，2027 年初全面開放大眾使用。",
-      "sources": [
-        [
-          "GovTech / The Detroit News",
-          "https://www.govtech.com/transportation/in-detroit-waymo-rolls-out-fully-autonomous-vehicle-testing"
-        ]
-      ]
-    },
-    {
-      "tag": "市場 · EV",
-      "date": "2026-10-07",
-      "title": "油荒推動俄羅斯插電車占比衝到 11.5%",
-      "summary": "煉油廠遭烏克蘭攻擊導致汽油短缺，俄羅斯 9 月下旬單週新車銷售中，BEV＋PHEV 占比達 11.5%（PHEV 8.5%、BEV 3%），是年初的兩倍多。不過這只是單週數據，無法直接和美國比較（美國第二季插電車合計約 7.4%）；同期歐盟約 31.7%，中國 8 月新能源車零售滲透率則是 65.2%。",
-      "sources": [
-        [
-          "Digital Today",
-          "https://www.digitaltoday.co.kr/en/view/111682/russia-ev-market-share-higher-than-us-a-closer-look-at-the-numbers"
-        ]
-      ]
-    },
-    {
-      "tag": "產業策略",
-      "date": "2026-10-02",
-      "title": "Aston Martin 首款電動車延到 2033 年以後",
-      "summary": "執行長 Adrian Hallmark 表示，需求和法規變化太快，首款 BEV 會落在 2033 到 2035 年之間，並自稱是「BEV delayer，不是 BEV denier」。2035 年前以燃油車為主，V8 和 V12 引擎都會保留，有油電化，但可能不做插電式。",
-      "sources": [
-        [
-          "Autocar",
-          "https://www.autocar.co.uk/car-news/new-cars/aston-wont-launch-ev-until-least-2033-will-keep-v8-and-v12"
-        ]
-      ]
-    }
-  ],
-  "term": {
-    "name": "Dash-to-axle ratio",
-    "zh": "儀表板到前軸距離",
-    "body": "指 A 柱底部（大致是儀表板前緣）到前輪中心的水平距離。距離越長，車頭越長、座艙越往後退，傳統上代表縱置引擎和後輪驅動，也是豪華車「高級比例」的來源，又稱 prestige gap。電動車其實不需要長車頭，所以 Jaguar Type 01 刻意拉長這段距離，是為了情感與品牌比例；Renault E-Space 則反其道而行，把擋風玻璃往前推，把長度全部讓給室內空間。看一台車時，先看這段距離，就能讀出它想強調的是「姿態」還是「空間」。"
+ "date": "2026-10-08",
+ "weekday": "週四",
+ "issue_no": 1,
+ "lede": "本期焦點：Jaguar 以 Type 01 重新定義自己，BMW Neue Klasse 再添 iX4，巴黎車展（10/12 起）前夕，Renault、Porsche、Alpine 紛紛預告概念車。比例、燈號與「去 SUV 化」是這週最值得看的三條設計主線。",
+ "design_news": [
+  {
+   "id": "jaguar-type-01",
+   "tag": "量產車 · 電動 GT",
+   "date": "2026-10-07",
+   "brand": "Jaguar",
+   "title": "Jaguar Type 01 正式發表：品牌重生後的第一台車",
+   "orig": "JLR unveils new Jaguar Type 01",
+   "summary": "Jaguar 10/7 在紐約發表 Type 01，是品牌重啟後第一款量產車，也是第一台建構在專屬 JEA（Jaguar Electric Architecture）平台上的四門豪華電動 GT。三電機合計約 1,015 hp，預計 2027 年在英國 Solihull 投產，英國售價 £130,000 起、美國 US$130,500 起。",
+   "analysis": [
+    [
+     "比例",
+     "延續 Type 00 概念車的古典 Jaguar GT 比例：極長車頭、座艙大幅後移，尾部收得非常戲劇化。Car and Driver 形容「引擎蓋長到看不見盡頭」。"
+    ],
+    [
+     "視野／UX",
+     "沒有後擋風玻璃，改用數位 ClearSight 後視螢幕，而且不放在傳統車內後視鏡的位置，而是擋風玻璃底部中央，與兩側後視鏡同高，視線移動更少。"
+    ],
+    [
+     "室內建築",
+     "一條貫穿前後的中央「脊樑」(spine) 把座艙切成四個獨立空間，打破一般儀表台的橫向構圖，強調縱深。前端收在一塊手機大小的空調觸控面板。"
+    ],
+    [
+     "CMF",
+     "以洞石 (travertine) 與手工織品為靈感，脊樑與門板頂端使用黃銅質感飾條，並採用 Kvadrat、Ultrafabrics 面料；引擎蓋上的百葉線條在儀表台紋理上重複出現。"
+    ],
+    [
+     "取捨",
+     "後座進出與空間偏緊，內裝設計主管 Tom Holden 坦言這是為了守住外型比例的刻意選擇：想面面俱到，最後只會做出一台平庸的車。"
+    ]
+   ],
+   "sources": [
+    [
+     "JLR Media",
+     "https://media.jlr.com/news/2026/10/designed-engineered-and-manufactured-britain-jlr-unveils-new-jaguar-type-01"
+    ],
+    [
+     "Car Design News",
+     "https://www.cardesignnews.com/cars/type-01-the-most-important-jaguar-ever-as-explained-by-its-designers-but-not-gerry/2747068"
+    ],
+    [
+     "Design Week",
+     "https://www.designweek.co.uk/the-in-depth-story-behind-the-jaguar-type-01-design-revolution/"
+    ],
+    [
+     "Car and Driver",
+     "https://www.caranddriver.com/news/a74036834/2028-jaguar-type-01-revealed/"
+    ]
+   ],
+   "image": {
+    "file": "news-jaguar-type-01.webp",
+    "alt": "Jaguar Type 01 前側 34 視角，藍灰色車身",
+    "credit": "JLR Media",
+    "credit_url": "https://media.jlr.com/news/2026/10/designed-engineered-and-manufactured-britain-jlr-unveils-new-jaguar-type-01"
+   }
   },
-  "moodboards": [
-    {
-      "theme": "Mid-century Californian surf wagon",
-      "zh": "五〇年代加州衝浪旅行車",
-      "intro": "戰後樂觀主義與海灘生活：長車頂、雙色烤漆、木質側板與白邊胎。把木頭和藤編這類手作溫度，重新詮釋成一台安靜的電動旅行車。",
-      "images": [
-        [
-          "mb1-1",
-          "原創虛構概念：海灘上的電動衝浪旅行車，海沫綠配奶油白雙色烤漆，搭配柚木側板",
-          true
-        ],
-        [
-          "mb1-2",
-          "尾門細節：柚木條板、鍍鉻框與圓形尾燈",
-          false
-        ],
-        [
-          "mb1-3",
-          "座艙：木質儀表飾條、細框方向盤、陶土色編織座椅",
-          false
-        ],
-        [
-          "mb1-4",
-          "材質：柚木薄片紋理（程式生成）",
-          false
-        ],
-        [
-          "mb1-5",
-          "材質：藤編網格 cane webbing（程式生成）",
-          false
-        ]
-      ],
-      "palette": [
-        [
-          "Seafoam",
-          "#8FC8B8"
-        ],
-        [
-          "Cream",
-          "#F2E8D5"
-        ],
-        [
-          "Teak",
-          "#9A6237"
-        ],
-        [
-          "Terracotta",
-          "#C8643B"
-        ],
-        [
-          "Pacific Blue",
-          "#2F6F8F"
-        ],
-        [
-          "Sunset Coral",
-          "#F2A07B"
-        ]
-      ],
-      "keywords": [
-        "樂觀主義",
-        "長車頂 Long roof",
-        "雙色塗裝 Two-tone",
-        "白邊胎 Whitewall",
-        "Golden hour",
-        "手作溫度"
-      ],
-      "materials": [
-        "FSC 認證柚木薄片（門板、尾門）",
-        "天然藤編 cane webbing（椅背、門板嵌片）",
-        "植鞣陶土色皮革",
-        "軟木地墊",
-        "拉絲鋁取代鍍鉻",
-        "米色 bouclé 織物頂篷"
-      ]
-    },
-    {
-      "theme": "Japanese retro-futurism 1980s",
-      "zh": "八〇年代日系復古未來",
-      "intro": "泡沫經濟時代的科技樂觀：楔形車身、數位儀表、格線與霓虹。用今天的 OLED 燈號和回收材質，重做「city pop」夜景裡的未來想像。",
-      "images": [
-        [
-          "mb2-1",
-          "原創虛構概念：珍珠白楔形雙門跑車，搭配霓虹側飾線與金色網狀輪圈",
-          true
-        ],
-        [
-          "mb2-2",
-          "燈號：煙燻壓克力後方的分段式全寬尾燈",
-          false
-        ],
-        [
-          "mb2-3",
-          "座艙：綠色向量數位儀表與兩側 satellite 控制艙",
-          false
-        ],
-        [
-          "mb2-4",
-          "材質：灰色絨布 velour 與三色貼條（程式生成）",
-          false
-        ],
-        [
-          "mb2-5",
-          "材質：金色陽極處理六角網格（程式生成）",
-          false
-        ]
-      ],
-      "palette": [
-        [
-          "Pearl White",
-          "#EDEBE6"
-        ],
-        [
-          "Gunmetal",
-          "#3A3D44"
-        ],
-        [
-          "Neon Magenta",
-          "#FF2E88"
-        ],
-        [
-          "Cyber Cyan",
-          "#19D3F0"
-        ],
-        [
-          "Sunset Orange",
-          "#FF8A3D"
-        ],
-        [
-          "Midnight Indigo",
-          "#1B1440"
-        ]
-      ],
-      "keywords": [
-        "楔形 Wedge",
-        "數位儀表",
-        "格線 Grid",
-        "City pop",
-        "霓虹夜景",
-        "卡帶與絨布"
-      ],
-      "materials": [
-        "回收 PET 絨布 velour（座椅中段）",
-        "煙燻壓克力（燈組、儀表罩）",
-        "珍珠白三層漆",
-        "金色陽極鋁網（輪圈、喇叭罩）",
-        "霧面槍灰硬塑膠（刻意保留的 80 年代質感）",
-        "OLED 分段式燈條"
-      ]
-    }
-  ]
+  {
+   "id": "bmw-ix4",
+   "tag": "量產車 · Neue Klasse",
+   "date": "2026-10-07",
+   "brand": "BMW",
+   "title": "BMW iX4 登場：Neue Klasse 的轎跑休旅版",
+   "orig": "BMW's iX4 SUV is a 428-mile defensive weapon against China's EV takeover",
+   "summary": "iX4 是 Neue Klasse 平台繼 iX3、i3 之後的第三款車，也是 iX3 的轎跑休旅版。iX4 50 xDrive 2027 年 3 月上市，美國售價 US$66,200 起；EPA 續航最高 428 英里，採 800V 架構、最高 400 kW 快充，10–80% 只要約 21 分鐘。",
+   "analysis": [
+    [
+     "輪廓",
+     "長軸距、短前後懸、溜背車頂加上整合式尾翼，是典型的 coupé-SUV 比例，和 iX3 共用 Neue Klasse 的平整面與俐落線條。"
+    ],
+    [
+     "燈號",
+     "發光雙腎格柵與雙頭燈整合成單一圖形，尾燈改為細長 L 形，用光取代鍍鉻當作品牌識別。"
+    ],
+    [
+     "UX",
+     "Panoramic iDrive 把資訊投影在整條擋風玻璃下緣，取代傳統儀表；17.9 吋異形 (free-cut) 中控螢幕的小工具可以直接拖拉到擋風玻璃顯示區。"
+    ],
+    [
+     "品牌方向",
+     "Neue Klasse 的減法語彙正往全車系擴散（連 7 系列都會跟進），BMW 用這套語言對抗中國品牌的科技感攻勢。"
+    ]
+   ],
+   "sources": [
+    [
+     "The Verge",
+     "https://www.theverge.com/transportation/1006837/bmw-ix4-ev-range-price-specs-tesla-china"
+    ],
+    [
+     "BMW PressClub",
+     "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
+    ]
+   ],
+   "image": {
+    "file": "news-bmw-ix4.webp",
+    "alt": "兩台 BMW iX4 停在海岸邊（灰色與紅色）",
+    "credit": "BMW Group PressClub",
+    "credit_url": "https://www.press.bmwgroup.com/global/article/detail/T0461402EN?language=en"
+   }
+  },
+  {
+   "id": "vw-mission-efficiency",
+   "tag": "概念車 · 空力",
+   "date": "2026-10-05",
+   "brand": "Volkswagen",
+   "title": "VW Mission Efficiency：風阻 0.158，實用性卻比 Golf 好",
+   "orig": "First sight: Volkswagen's Mission Efficiency streamliner is more practical than it looks",
+   "summary": "以未來 ID. Polo 平台打造的 2+2 流線型概念車，官方宣稱風阻係數只有 0.158，後座放倒後行李空間超過 1,200 公升。Car Design News 在 Loh Collection 的 Car Design Classic 活動上訪問了 VW 歐洲外觀設計主管 Stefan Wallburg。",
+   "analysis": [
+    [
+     "面的處理",
+     "靈感來自飛機：側面一道銳利稜線加上下方的陰影帶，讓上半部反射天空、下半部反射路面，視覺上「扁了半公尺」。車頂比 ID. Polo 低 10 cm，正面迎風面積只比機車大一點。"
+    ],
+    [
+     "輪拱與輪圈",
+     "後輪遮罩呼應 Porsche 917；輪拱內緣精準貼合「wheel potato」（車輪在轉向與懸吊行程中掃出的包絡面）。五輻螺旋槳式輪圈用外環延伸到胎壁，讓輪子看起來更大。"
+    ],
+    [
+     "務實細節",
+     "沒用 XL1 的攝影機後視鏡，而是把傳統後視鏡融進造型，只增加約 4 counts 風阻，也省去車內螢幕的成本；車門內移除電子元件，提高回收性。"
+    ],
+    [
+     "燈號",
+     "頭燈做成眼睛造型（內有虹膜線條），用翼狀元素連接發光廠徽，這是 VW 在全球通用的識別。"
+    ]
+   ],
+   "sources": [
+    [
+     "Car Design News",
+     "https://www.cardesignnews.com/cars/first-sight-volkswagens-mission-efficiency-streamliner-is-more-practical-than-it-looks/2746766"
+    ]
+   ],
+   "image": {
+    "file": "news-vw-mission-efficiency.webp",
+    "alt": "Volkswagen Mission Efficiency 流線型概念車側面",
+    "credit": "Volkswagen Newsroom",
+    "credit_url": "https://www.volkswagen-newsroom.com/en/press-releases/mission-efficiency-volkswagen-presents-the-worlds-most-efficient-near-production-electric-car-20691"
+   }
+  },
+  {
+   "id": "renault-e-space",
+   "tag": "概念車 · 巴黎車展",
+   "date": "2026-10-06",
+   "brand": "Renault",
+   "title": "Renault E-Space Concept：用 one-box 單廂車對抗 SUV",
+   "orig": "E-Space Concept: Renault reinvents the voiture à vivre",
+   "summary": "向 1984 年初代 Espace 致敬的電動家庭車概念，長 4.70 m、寬 2.02 m、高 1.67 m，23 吋輪圈推到四個角落，車色是 black rubé。10/12 在巴黎車展首發，官方表示目前沒有量產計畫。",
+   "analysis": [
+    [
+     "輪廓",
+     "刻意不走 SUV：離地低、腰線低，擋風玻璃從引擎蓋一路順下來，回到 MPV 的單廂 (one-box) 輪廓，把空間留給乘客。"
+    ],
+    [
+     "燈號",
+     "前後都用寬幅 U 形燈帶勾勒車身輪廓，車頭中央是由像素構成的發光菱形，看起來像懸浮在空中。"
+    ],
+    [
+     "室內",
+     "平坦地板上配置三排六張同尺寸獨立座椅，可微幅旋轉，也能圍著大桌子排列。OpenR Panorama 曲面螢幕寬 1,130 mm、高 110 mm，橫跨整個座艙、取代傳統儀表台，將用在 Renault 未來的高階電動車上。"
+    ]
+   ],
+   "sources": [
+    [
+     "Renault Media",
+     "https://media.renault.com/e-space-concept-renault-reinvents-the-voiture-a-vivre-and-sets-a-date-for-the-2026-paris-motor-show/?lang=eng"
+    ],
+    [
+     "Electrek",
+     "https://electrek.co/2026/10/06/electric-minivan-bringing-80s-icon-back-to-life/"
+    ]
+   ],
+   "image": {
+    "file": "news-renault-e-space.webp",
+    "alt": "Renault E-Space Concept 單廂電動家庭車，停在沙漠",
+    "credit": "Renault Media",
+    "credit_url": "https://media.renault.com/e-space-concept-renault-reinvents-the-voiture-a-vivre-and-sets-a-date-for-the-2026-paris-motor-show/?lang=eng"
+   }
+  },
+  {
+   "id": "hyundai-tucson",
+   "tag": "量產車 · 設計訪談",
+   "date": "2026-10-05",
+   "brand": "Hyundai",
+   "title": "第五代 Hyundai Tucson：Art of Steel 往高級感走",
+   "orig": "Hyundai talks Tucson and 'intuitive' design",
+   "summary": "全新第五代 Tucson 外型更方正銳利，前後燈組全部換新。Car Design News 訪問 Hyundai 歐洲首席設計師 Eduardo Ramirez 和產品副總 Christopher McKinnon，談「以人為本」與去除不必要配備的設計思路。",
+   "analysis": [
+    [
+     "量體",
+     "延續 Art of Steel 語彙，但放大量體與翼子板，營造厚實、具保護感的姿態；後方像 80 年代西裝「墊肩」的肩線，金屬沖壓深度創 Hyundai 紀錄，是設計和製造團隊反覆拉鋸的成果。"
+    ],
+    [
+     "室內",
+     "大空間、柔和氛圍燈與較圓潤的造型，中和外觀的強硬感；車窗用雙層玻璃，打造安靜的 cocoon；後門幾乎可以開到直角。"
+    ],
+    [
+     "UX",
+     "強調「直覺」而不是堆配備數量：不必移開視線就能調整後視鏡，配備後座兒童遺留偵測、拖車倒車輔助等實用功能。"
+    ],
+    [
+     "品牌定位",
+     "往上提升質感，但與 Genesis 在材質、動力和懸吊上保持區隔。"
+    ]
+   ],
+   "sources": [
+    [
+     "Car Design News",
+     "https://www.cardesignnews.com/cars/hyundai-talks-tucson-and-intuitive-design/2746634"
+    ]
+   ],
+   "image": {
+    "file": "news-hyundai-tucson.webp",
+    "alt": "第五代 Hyundai Tucson 在沙丘上行駛",
+    "credit": "Hyundai Worldwide Newsroom",
+    "credit_url": "https://www.hyundai.com/worldwide/en/newsroom/detail/0000001280"
+   }
+  },
+  {
+   "id": "porsche-mission-s",
+   "tag": "預告 · 超跑",
+   "date": "2026-10-07",
+   "brand": "Porsche",
+   "title": "Porsche 預告 Mission S：定位在 911 之上的中置引擎超跑",
+   "orig": "Porsche Mission S Supercar Picks Up Where The 918 Left Off",
+   "summary": "Porsche 在 Weissach 公布 2035 年前的策略「Sportwagenschmiede 35」，同時預告中置引擎超跑概念 Mission S，形容它是「our love letter to the sports car」，未來量產版將定位在 911 之上，延續 918 Spyder 的角色。報導指出將在巴黎車展期間（10/15）正式亮相。",
+   "analysis": [
+    [
+     "目前可見",
+     "預告影片只露出 LED 頭燈、模糊的尾燈和中央鎖輪圈；Carscoops 推測可能延續 2023 年 Mission X 概念車的設計線索。"
+    ],
+    [
+     "品牌方向",
+     "策略核心是「Value over Volume」：車型變體減少 20%，每條產品線都要有更多 911 DNA，設計資源會集中在辨識度更高的情感型產品。"
+    ]
+   ],
+   "sources": [
+    [
+     "Carscoops",
+     "https://www.carscoops.com/2026/10/porsche-mission-s-supercar-picks-up-where-the-918-left-off/"
+    ],
+    [
+     "Road & Track",
+     "https://www.roadandtrack.com/news/a74066848/porsche-reveals-plans-potential-halo-supercar-more-exclusive-911-variants/"
+    ]
+   ],
+   "image": {
+    "file": "news-porsche-mission-s.webp",
+    "alt": "Porsche Mission S 官方預告圖（只露出廠徽）",
+    "credit": "Porsche（Mission S 預告頁）",
+    "credit_url": "https://www.porsche.com/international/models/mission-s-preview/"
+   }
+  },
+  {
+   "id": "alpine-ps1",
+   "tag": "預告 · 巴黎車展",
+   "date": "2026-10-06",
+   "brand": "Alpine",
+   "title": "Alpine 將揭曉 PS1 概念車，並預告第三代 A110",
+   "orig": "Alpine to unveil PS1 at Paris Motor Show",
+   "summary": "Alpine 將在 10/12 巴黎車展揭曉代號 PS1（Projet Spécial 1）的概念車，目前只公開一張頭燈影像。同場還有預告第三代 A110 的雕塑作品 A110 Sculpture，以及 A290、A390 的新顏色與內裝個人化選項。",
+   "analysis": [
+    [
+     "燈號",
+     "只用一顆頭燈預告整台車，說明燈號已經成為品牌最核心的識別元素。"
+    ],
+    [
+     "A110 Sculpture",
+     "以藍色薄紗包覆，象徵輕量和氣流；保留初代 Berlinette 的比例與站姿，靈感部分來自協和號突破音速的瞬間，建構在全新 Alpine Performance Platform (APP) 上。"
+    ],
+    [
+     "CMF",
+     "Atelier Alpine 個人化計畫首次擴展到 A290 和 A390，A390 GTS 推出新色 Bleu Tempête Mat。"
+    ]
+   ],
+   "sources": [
+    [
+     "Alpine Media",
+     "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
+    ]
+   ],
+   "image": {
+    "file": "news-alpine-ps1.webp",
+    "alt": "Alpine PS1 概念車官方預告圖：頭燈特寫",
+    "credit": "Alpine Media",
+    "credit_url": "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
+   }
+  }
+ ],
+ "knowledge": [
+  {
+   "tag": "召回 · 製造",
+   "date": "2026-10-05",
+   "title": "VW 集團召回約 400 萬輛，Dieselgate 以來規模最大",
+   "summary": "原因是轉向系統的一顆螺絲可能腐蝕，長期下來會影響轉向功能。依德國 KBA 數據，VW 約 216 萬輛、Audi 約 70 萬輛，另有 Škoda 超過 100 萬輛、SEAT 約 20 萬輛。VW 表示這是預防性措施，更換螺絲不超過一小時。",
+   "sources": [
+    [
+     "Insurance Journal / Reuters",
+     "https://www.insurancejournal.com/news/international/2026/10/05/887990.htm"
+    ]
+   ]
+  },
+  {
+   "tag": "電池",
+   "date": "2026-10-06",
+   "title": "Samsung SDI × EcoPro BM：硫化物全固態電池目標 2027 年商用",
+   "summary": "兩家韓國公司簽署 MOU，從前期研發、品質驗證一路合作到量產體系，目標 2027 年商用化硫化物全固態電池。Samsung SDI 負責電芯和量產技術，EcoPro BM 負責正極材料和固態電解質，目前已有年產 40 噸的試產線。",
+   "sources": [
+    [
+     "Chosun Biz",
+     "https://biz.chosun.com/en/en-industry/2026/10/06/6WQMG5S3YZBOPJPFWGJVXVLGKA/"
+    ]
+   ]
+  },
+  {
+   "tag": "自動駕駛",
+   "date": "2026-10-07",
+   "title": "Waymo 在底特律開始無安全駕駛員的全無人測試",
+   "summary": "Waymo 是第一家在密西根做自動駕駛叫車的公司，初期只開放給員工搭乘。主力車款是中國製造的 Zeekr Ojai，搭載第六代 Waymo Driver，硬體成本比第五代約低一半，也能應付冬季路況。分析師預估年底前小規模開放，2027 年初全面開放大眾使用。",
+   "sources": [
+    [
+     "GovTech / The Detroit News",
+     "https://www.govtech.com/transportation/in-detroit-waymo-rolls-out-fully-autonomous-vehicle-testing"
+    ]
+   ]
+  },
+  {
+   "tag": "市場 · EV",
+   "date": "2026-10-07",
+   "title": "油荒推動俄羅斯插電車占比衝到 11.5%",
+   "summary": "煉油廠遭烏克蘭攻擊導致汽油短缺，俄羅斯 9 月下旬單週新車銷售中，BEV＋PHEV 占比達 11.5%（PHEV 8.5%、BEV 3%），是年初的兩倍多。不過這只是單週數據，無法直接和美國比較（美國第二季插電車合計約 7.4%）；同期歐盟約 31.7%，中國 8 月新能源車零售滲透率則是 65.2%。",
+   "sources": [
+    [
+     "Digital Today",
+     "https://www.digitaltoday.co.kr/en/view/111682/russia-ev-market-share-higher-than-us-a-closer-look-at-the-numbers"
+    ]
+   ]
+  },
+  {
+   "tag": "產業策略",
+   "date": "2026-10-02",
+   "title": "Aston Martin 首款電動車延到 2033 年以後",
+   "summary": "執行長 Adrian Hallmark 表示，需求和法規變化太快，首款 BEV 會落在 2033 到 2035 年之間，並自稱是「BEV delayer，不是 BEV denier」。2035 年前以燃油車為主，V8 和 V12 引擎都會保留，有油電化，但可能不做插電式。",
+   "sources": [
+    [
+     "Autocar",
+     "https://www.autocar.co.uk/car-news/new-cars/aston-wont-launch-ev-until-least-2033-will-keep-v8-and-v12"
+    ]
+   ]
+  }
+ ],
+ "term": {
+  "name": "Dash-to-axle ratio",
+  "zh": "儀表板到前軸距離",
+  "body": "指 A 柱底部（大致是儀表板前緣）到前輪中心的水平距離。距離越長，車頭越長、座艙越往後退，傳統上代表縱置引擎和後輪驅動，也是豪華車「高級比例」的來源，又稱 prestige gap。電動車其實不需要長車頭，所以 Jaguar Type 01 刻意拉長這段距離，是為了情感與品牌比例；Renault E-Space 則反其道而行，把擋風玻璃往前推，把長度全部讓給室內空間。看一台車時，先看這段距離，就能讀出它想強調的是「姿態」還是「空間」。",
+  "diagram": "term.svg"
+ },
+ "moodboards": [
+  {
+   "theme": "Mid-century Californian surf wagon",
+   "zh": "五〇年代加州衝浪旅行車",
+   "intro": "戰後樂觀主義與海灘生活：長車頂、雙色烤漆、木質側板與白邊胎。把木頭和藤編這類手作溫度，重新詮釋成一台安靜的電動旅行車。",
+   "images": [
+    [
+     "mb1-1",
+     "原創虛構概念：海灘上的電動衝浪旅行車，海沫綠配奶油白雙色烤漆，搭配柚木側板",
+     true
+    ],
+    [
+     "mb1-2",
+     "尾門細節：柚木條板、鍍鉻框與圓形尾燈",
+     false
+    ],
+    [
+     "mb1-3",
+     "座艙：木質儀表飾條、細框方向盤、陶土色編織座椅",
+     false
+    ],
+    [
+     "mb1-4",
+     "材質：柚木薄片紋理（程式生成）",
+     false
+    ],
+    [
+     "mb1-5",
+     "材質：藤編網格 cane webbing（程式生成）",
+     false
+    ]
+   ],
+   "palette": [
+    [
+     "Seafoam",
+     "#8FC8B8"
+    ],
+    [
+     "Cream",
+     "#F2E8D5"
+    ],
+    [
+     "Teak",
+     "#9A6237"
+    ],
+    [
+     "Terracotta",
+     "#C8643B"
+    ],
+    [
+     "Pacific Blue",
+     "#2F6F8F"
+    ],
+    [
+     "Sunset Coral",
+     "#F2A07B"
+    ]
+   ],
+   "keywords": [
+    "樂觀主義",
+    "長車頂 Long roof",
+    "雙色塗裝 Two-tone",
+    "白邊胎 Whitewall",
+    "Golden hour",
+    "手作溫度"
+   ],
+   "materials": [
+    "FSC 認證柚木薄片（門板、尾門）",
+    "天然藤編 cane webbing（椅背、門板嵌片）",
+    "植鞣陶土色皮革",
+    "軟木地墊",
+    "拉絲鋁取代鍍鉻",
+    "米色 bouclé 織物頂篷"
+   ]
+  },
+  {
+   "theme": "Japanese retro-futurism 1980s",
+   "zh": "八〇年代日系復古未來",
+   "intro": "泡沫經濟時代的科技樂觀：楔形車身、數位儀表、格線與霓虹。用今天的 OLED 燈號和回收材質，重做「city pop」夜景裡的未來想像。",
+   "images": [
+    [
+     "mb2-1",
+     "原創虛構概念：珍珠白楔形雙門跑車，搭配霓虹側飾線與金色網狀輪圈",
+     true
+    ],
+    [
+     "mb2-2",
+     "燈號：煙燻壓克力後方的分段式全寬尾燈",
+     false
+    ],
+    [
+     "mb2-3",
+     "座艙：綠色向量數位儀表與兩側 satellite 控制艙",
+     false
+    ],
+    [
+     "mb2-4",
+     "材質：灰色絨布 velour 與三色貼條（程式生成）",
+     false
+    ],
+    [
+     "mb2-5",
+     "材質：金色陽極處理六角網格（程式生成）",
+     false
+    ]
+   ],
+   "palette": [
+    [
+     "Pearl White",
+     "#EDEBE6"
+    ],
+    [
+     "Gunmetal",
+     "#3A3D44"
+    ],
+    [
+     "Neon Magenta",
+     "#FF2E88"
+    ],
+    [
+     "Cyber Cyan",
+     "#19D3F0"
+    ],
+    [
+     "Sunset Orange",
+     "#FF8A3D"
+    ],
+    [
+     "Midnight Indigo",
+     "#1B1440"
+    ]
+   ],
+   "keywords": [
+    "楔形 Wedge",
+    "數位儀表",
+    "格線 Grid",
+    "City pop",
+    "霓虹夜景",
+    "卡帶與絨布"
+   ],
+   "materials": [
+    "回收 PET 絨布 velour（座椅中段）",
+    "煙燻壓克力（燈組、儀表罩）",
+    "珍珠白三層漆",
+    "金色陽極鋁網（輪圈、喇叭罩）",
+    "霧面槍灰硬塑膠（刻意保留的 80 年代質感）",
+    "OLED 分段式燈條"
+   ]
+  }
+ ]
 }
