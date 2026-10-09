@@ -13,7 +13,8 @@ index.html                  ← build.py 產生（最新一期）
 archive/index.html          ← build.py 產生
 assets/style.css            ← 共用樣式（深淺色、RWD、CJK 字體）
 issues/YYYY-MM-DD/
-  data.json                 ← 唯一需要手寫的內容檔
+  data.json                 ← 手寫的內容檔
+  term.svg                  ← 今日設計名詞的線稿示意圖（每期新畫，build 會內嵌）
   img/*.webp                ← 情緒板圖像（≤1400px WebP）
   index.html                ← build.py 產生
 ai/
@@ -43,7 +44,10 @@ tools/
      3. 裁成 16:9、縮成 1600×900 WebP（q≈82，<300KB），存成 `issues/<date>/img/news-<id>.webp`。
      4. 在 data.json 該則加入 `"image": {"file": "news-<id>.webp", "alt": "<中文描述>", "credit": "<來源名稱，如 BMW Group PressClub>", "credit_url": "<來源頁面>"}`。
         build.py 會把圖片放在卡片最上方（object-fit: cover、lazy loading、alt），並顯示「圖片來源：…」連結；首則卡片的圖也會用作 og:image。
-2. **汽車新知（3–5 則）**：EV、電池、自駕、法規、製造、市場；摘要＋連結。另寫一則「今日設計名詞」（盡量和當期新聞呼應）。
+2. **汽車新知（3–5 則）**：EV、電池、自駕、法規、製造、市場；摘要＋連結。   **今日設計名詞（必要步驟，每期都要畫新圖）**：寫一則和當期新聞呼應的名詞（`term.name / zh / body`），並**為這個名詞手繪一張新的線稿示意圖**：
+   - 存成 `issues/<date>/term.svg`，在 data.json 加 `"term": {..., "diagram": "term.svg"}`。
+   - 格式：單一 `<svg class="diagram" viewBox="0 0 520 …" width="100%" role="img" aria-label="…">`；線條用 `stroke="currentColor"`（自動適應深淺色），重點標註用強調色 `#f08a5d`，文字 font-size 10–12、中文標註。風格參考 `issues/2026-10-08/term.svg`（dash-to-axle）與 `issues/2026-10-09/term.svg`（Heritage cue）。
+   - 圖的內容必須對應當天名詞與內文舉的例子；**不可沿用前一期的圖**。build.py 會內嵌這個 SVG，缺檔、缺 `diagram` 欄位，或與其他期（不同名詞）內容相同時，**build 會直接失敗**。
 3. **情緒板（1–2 組）**：`python3 tools/pick_themes.py 2` 抽主題 → 每組 4–6 張原創虛構圖（不可出現真實車款或 logo）＋6 色 hex 色票、關鍵字、材質筆記。
    - 有 GenerateImage 等生圖工具時優先使用，輸出後轉 WebP（≤1400px、q≈80）放 `issues/<date>/img/`，命名 `mb1-1…`、`mb2-1…`，每組第一張為 hero（16:9），其餘 4:3。
    - 沒有時用 `tools/moodart.py` 的做法（SVG 插畫＋numpy 材質）為新主題寫對應函式。
