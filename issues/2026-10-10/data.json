@@ -1,0 +1,221 @@
+{
+ "date": "2026-10-10",
+ "weekday": "週六",
+ "issue_no": 3,
+ "lede": "巴黎車展倒數兩天：Volkswagen 用 Mission Efficiency 証明極端流線型也能塞進嬰兒車；Alpine 預告 PS1 的「下掀頭燈」；Renault 則把 1984 Espace 的「生活之車」精神電氣化成 E-Space。中國這邊，賽豆 AIVA ME7 把仿生「靈動光眸」帶進量產，理想汽車 2026 i6 也確定 10/28 發表並前進巴黎。歐中混動出口協議則是產業面最新變數。",
+ "design_news": [
+  {
+   "id": "vw-mission",
+   "tag": "概念車 · 空力",
+   "date": "2026-10-05",
+   "brand": "Volkswagen",
+   "title": "Mission Efficiency：Cd 0.158 的流線型，卻能塞超過 1,200 升行李",
+   "orig": "First sight: Volkswagen’s Mission Efficiency streamliner is more practical than it looks",
+   "summary": "Volkswagen 歐洲外觀設計主管 Stefan Wallburg 向 Car Design News 說明 Mission Efficiency：基於即將到來的 ID. Polo 架構，做成 fully fledged 2+2，後座傾倒後行李空間超過 1,200 升，宣稱風阻係數僅 0.158。靈感來自 XL1 與飛機曲面，後輪加蓋、輪拱內緣貼著「wheel potato」懸吊包絡面，車頂還有太陽能板。",
+   "analysis": [
+    ["比例", "比 ID. Polo 矮 10 cm，正面迎風面積壓到接近機車等級，卻維持 2+2 與大行李廂，把「概念車戲劇感」和「日常能用」硬湊在一起。"],
+    ["面處理", "機翼式陰影線把車側質量視覺上削掉約半公尺；層流紋理一路導到擴散器，後輪蓋遠看有點像 Porsche 917。"],
+    ["輪圈／空力", "五幅螺旋槳輪圈致敬 XL1／L1；輪拱外緣看起來普通，內緣卻精準貼著輪胎運動包絡，再加輪隙縮減器。"],
+    ["燈號", "頭燈模組像眼睛，虹膜線條藏在玻璃下以降低阻力，並用翼狀元素把雙眼與發光 VW 標連在一起。"],
+    ["品牌方向", "刻意不用昂貴後視鏡攝影機，改用低阻實體後視鏡（約只損失 4 counts），顯示這台概念車有一隻眼睛盯著量產可行性。"]
+   ],
+   "sources": [
+    ["Car Design News", "https://www.cardesignnews.com/cars/first-sight-volkswagens-mission-efficiency-streamliner-is-more-practical-than-it-looks/2746766"]
+   ],
+   "image": {
+    "file": "news-vw-mission.webp",
+    "alt": "金屬灰 Mission Efficiency 流線型概念車，後輪加蓋，停在經典車展場",
+    "credit": "Volkswagen（via Car Design News）",
+    "credit_url": "https://www.cardesignnews.com/cars/first-sight-volkswagens-mission-efficiency-streamliner-is-more-practical-than-it-looks/2746766"
+   }
+  },
+  {
+   "id": "alpine-ps1",
+   "tag": "預告 · 巴黎車展",
+   "date": "2026-10-06",
+   "brand": "Alpine",
+   "title": "Alpine PS1 預告：法規不允許上掀，就改成「下掀頭燈」",
+   "orig": "Alpine’s Latest Creation Has Pop-Down Headlights",
+   "summary": "Alpine 官方宣布 Projet Spécial 1（PS1）將於 10/12 巴黎車展 09:20 CEST 亮相，是「特殊專案」產品柱的第一台。預告影片／圖只露出頭燈：不用時蓋板與平坦引擎蓋齊平，使用時蓋板向下收入車身，露出細長 LED，並帶法國國旗藍白紅光點。Carscoops 認為機制類似 Eccentrica 的 Diablo restomod，且比傳統上掀式更符合行人保護法規。",
+   "analysis": [
+    ["燈號", "「隱藏頭燈」的情感保留，但運動方向從向上改成向下收入，避開 1990 年代起歐洲對前端尖銳突出物的限制。"],
+    ["面處理", "預告可見寬葉子板與側視鏡攝影機，姿態偏低、偏空力；矩形燈區與曲面讓人聯想到 1971–1984 的 A310。"],
+    ["產品架構", "Alpine 把產品分成三柱：Extraordinary Everyday（A290／A390）、Icons（A110）、Projet Spécial；PS1 是第三柱首發。"],
+    ["品牌方向", "外媒推測它可能預告電動 2+2 GT、也就是下一代 A310 方向，與下一代 A110 共用 Alpine Performance Platform。"]
+   ],
+   "sources": [
+    ["Alpine Media", "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"],
+    ["Carscoops", "https://www.carscoops.com/2026/10/alpines-latest-creation-has-pop-down-headlights/"]
+   ],
+   "image": {
+    "file": "news-alpine-ps1.webp",
+    "alt": "Alpine PS1 官方預告：黑暗中的細長 LED 頭燈與藍白紅分段光點",
+    "credit": "Alpine Cars（官方預告）",
+    "credit_url": "https://media.alpinecars.com/alpine-to-unveil-ps1-at-paris-motor-show/?lang=eng"
+   }
+  },
+  {
+   "id": "renault-espace",
+   "tag": "概念車 · 巴黎車展",
+   "date": "2026-10-06",
+   "brand": "Renault",
+   "title": "Renault E-Space Concept：把 1984 Espace 的「生活之車」做成電動家庭艙",
+   "orig": "RENAULT E-SPACE, A CONCEPT MADE FOR LIVING",
+   "summary": "Auto&Design 報導，Renault 將在巴黎車展世界首發 E-Space Concept，向 1984 年 Espace 的 voitures à vivre 精神致敬。「E」對應 E-Tech 電氣化，「Space」強調寬敞、科技又親切的座艙。車長 4.70 公尺，車身是優雅的黑寶石紅；前後都有追隨車身輪廓的寬幅發光 U 字，前端中央是彷彿懸浮在像素光場中的發光菱形標誌。",
+   "analysis": [
+    ["比例", "4.70 m 的家族車尺度，用鮮明輪廓重新定義家庭車，而不是再做一台 tall SUV。"],
+    ["燈號", "前後寬幅發光 U 成為主要識別；菱形標誌被做成懸浮像素光，延續 Renault 近期的燈語實驗。"],
+    ["室內 UX", "品牌把自己的標記寫成 Design to be loved、Electrified by passion、Human-first tech、Crafted space，整台車的敘事圍繞「車上生活」而非馬力數字。"],
+    ["品牌方向", "官方把它放進 futuREady 策略：用創新服務人、情感與車上生活；同場 Renault 還會再展兩台概念車。"]
+   ],
+   "sources": [
+    ["Auto&Design", "https://autodesignmagazine.com/en/2026/10/renault-e-space-a-concept-made-for-living/"]
+   ],
+   "image": {
+    "file": "news-renault-espace.webp",
+    "alt": "黑寶石紅 Renault E-Space Concept 行駛於沙漠，前端發光 U 與菱形標誌",
+    "credit": "Renault（via Auto&Design）",
+    "credit_url": "https://autodesignmagazine.com/en/2026/10/renault-e-space-a-concept-made-for-living/"
+   }
+  },
+  {
+   "id": "aiva-me7",
+   "tag": "中國 · 量產設計",
+   "date": "2026-10-08",
+   "brand": "AIVA（賽豆）",
+   "title": "AIVA ME7 路試曝光：潛航式前臉與會「對視」的靈動光眸",
+   "orig": "纯电续航700公里！赛豆AIVA ME7实车曝光，或接入换电",
+   "summary": "賽力斯旗下賽豆科技的 AI 汽車品牌 AIVA，首款量產跨界轎跑 SUV ME7 先前已在巴黎完成全球首秀，近日無偽路試圖流出。設計延續 Origin Concept：潛航式前臉、鯊魚鰭前保、游弋式溜背、雙鯨尾寬體；「靈動光眸」像素大燈可在解鎖時亮起迎賓眼神，並對手勢做出回應。純電版基於 800V、CLTC 最高約 700 km，亦傳可能接入寧德時代巧克力換電。",
+   "analysis": [
+    ["燈號", "把「眼睛」放在最能與人對視的位置，用光點矩陣做迎賓與手勢互動——這是少數把燈語直接寫進品牌主張（Live Alive）的量產案。"],
+    ["比例", "溜背從 B 柱開始下壓，半隱藏門把與黑色寬體輪眉，姿態比問界 M5／M7 更低趴，走轎跑 SUV 而非家庭方盒子。"],
+    ["面處理／CMF", "仿生語彙貫穿全車（許願骨輪轂、雙鯨尾）；三色海狼銀、珊瑚紫、火烈紅搭配光影藝術車漆，強調角度變色。"],
+    ["品牌方向", "AIVA 強調「先有 AI，再有車」：由 AI 服務人的需求反向定義形態與曲面，是中國新品牌把互動燈語當設計核心的例子。"]
+   ],
+   "sources": [
+    ["出行團／汽車通", "https://m.qctt.cn/news/1929835"],
+    ["IT之家", "https://www.ithome.com/0/1008/470.htm"]
+   ],
+   "image": {
+    "file": "news-aiva-me7.webp",
+    "alt": "銀色 AIVA ME7 宣傳圖，溜背跨界 SUV 與藍色光軌",
+    "credit": "AIVA／賽豆（via IT之家）",
+    "credit_url": "https://www.ithome.com/0/1008/470.htm"
+   }
+  },
+  {
+   "id": "li-i6",
+   "tag": "中國 · 改款",
+   "date": "2026-10-09",
+   "brand": "理想汽車 Li Auto",
+   "title": "2026 理想 i6 10/28 發表：半隱藏門把，並以 Li 6 之名前進巴黎",
+   "orig": "Li Auto to launch 2026 Li i6 on October 28, deliveries to start in early November",
+   "summary": "理想汽車宣布 2026 i6 將於 10/28 發表，10/11 起在中國 485 家門店展出，10/12 以歐洲名 Li 6 亮相巴黎車展，稱是品牌首款全球純電車。外觀延續現有設計語言，改採半隱藏式門把；動力與智駕則換上自研 5C 電池與 Mach 晶片。單馬達與雙馬達四驅都有，中國交付預計 11 月初開始。",
+   "analysis": [
+    ["面處理", "半隱藏門把是這次外觀最明顯的更新，讓側身更乾淨，也呼應純電全球車對空力與簡潔的要求。"],
+    ["比例", "維持既有五座純電 SUV 架構，沒有為了「大改」而重做站姿，把辨識度留給燈語與輪廓。"],
+    ["品牌方向", "把主力銷售車型同時當歐洲首發產品，顯示理想正把設計與命名（i6 → Li 6）做成可輸出的全球語言。"],
+    ["產品節奏", "從 9 月底延到 10 月底發表、卻維持 11 月初交付，是刻意縮短「下訂到交車」空窗的排程設計。"]
+   ],
+   "sources": [
+    ["CnEVPost", "https://cnevpost.com/2026/10/09/li-auto-launch-2026-li-i6-oct-28/"]
+   ],
+   "image": {
+    "file": "news-li-i6.webp",
+    "alt": "青綠色 2026 理想 i6 純電 SUV 側前方官圖",
+    "credit": "Li Auto（via CnEVPost）",
+    "credit_url": "https://cnevpost.com/2026/10/09/li-auto-launch-2026-li-i6-oct-28/"
+   }
+  }
+ ],
+ "knowledge": [
+  {
+   "tag": "貿易 · 歐中",
+   "date": "2026-10-09",
+   "title": "歐中就中國混動車出口達成「節制」協議，傳四年內砍半",
+   "summary": "多家外媒 10/9 報導，歐盟與中國就節制中國油電／插混車輸歐達成協議，外電稱未來四年出口量可能削減逾一半；對中國純電車的既有反補貼稅仍在。協議亦涉及歐盟對華出口關稅調整與稀土許可便利化。這是本週繼防衛性配額傳聞後，歐中車市最重要的政策進展。",
+   "sources": [
+    ["U.S. News／Reuters", "https://money.usnews.com/investing/news/articles/2026-10-09/china-eu-strike-deal-to-cut-chinese-hybrid-vehicle-exports-by-over-half"],
+    ["DW", "https://www.dw.com/en/china-eu-reach-deal-to-moderate-chinas-car-exports-to-eu/a-79621394"]
+   ]
+  },
+  {
+   "tag": "車展 · 巴黎",
+   "date": "2026-10-09",
+   "title": "巴黎車展 10/12 開幕：約 20 家中國品牌到場，Deepal 帶 S07／S05",
+   "summary": "Mondial de l'Auto 2026 於 10/12–18 舉行。Euronews 等媒體指出約 20 家中國品牌將參展；長安深藍（Deepal）確認 S07、S05 會出現在長安展台（Hall 7.1），口號「Smart Your Future」。同時 2027 款 Deepal L06（含追風版）已於 10/9 在中國上市節奏中推進。",
+   "sources": [
+    ["Euronews", "https://www.euronews.com/2026/10/09/electrification-and-chinese-brands-paris-motor-show-opens-monday"],
+    ["CnEVPost", "https://cnevpost.com/2026/10/08/changan-deepal-to-launch-2027-l06-oct-9/"]
+   ]
+  },
+  {
+   "tag": "市場 · 中國",
+   "date": "2026-10-09",
+   "title": "理想 i6 改制程：門店 10/11 展車，歐洲版巴黎首秀",
+   "summary": "理想把 2026 i6 的中國發表定在 10/28，並同步以 Li 6 之名在巴黎展出歐洲版，宣告為品牌首款全球純電車。i6 自 2025 年 9 月上市以來已是銷售主力；此次改款重點在自研 5C 電池與 Mach 智駕晶片，價格尚未公布。",
+   "sources": [
+    ["CnEVPost", "https://cnevpost.com/2026/10/09/li-auto-launch-2026-li-i6-oct-28/"]
+   ]
+  },
+  {
+   "tag": "技術 · 中國",
+   "date": "2026-10-09",
+   "title": "比亞迪人形機器外觀設計浮現，正式發表時程未定",
+   "summary": "CnEVPost 整理公開資訊指出，比亞迪人形機器相關外觀設計已流出，但品牌尚未宣布正式發表時程。這類「車廠做機器人」動態反映中國新勢力把具身智能當成下一階段敘事，短期對量產車設計語言影響有限，卻會排進品牌展台的科技展示。",
+   "sources": [
+    ["CnEVPost", "https://cnevpost.com/2026/10/09/byd-humanoid-robot-design-emerges/"]
+   ]
+  }
+ ],
+ "term": {
+  "name": "Pop-down headlamp",
+  "zh": "下掀頭燈",
+  "body": "傳統 pop-up（上掀式）頭燈在不用時藏進引擎蓋，使用時整塊蓋板向上立起；歐洲自 1990 年代起限制車頭尖銳突出物，加上行人保護法規，讓上掀式幾乎從新車上消失。Pop-down（下掀）把同一套「隱藏／現身」的戲劇感改成蓋板向下收入車身，燈具露出時邊緣仍與車身齊平，因此有機會通過量產法規。Alpine PS1 的預告就是典型：平坦引擎蓋下的蓋板下沉，露出細長 LED，並用藍白紅光點點出品牌國籍。和本期的 Heritage cue 不同，下掀頭燈不是復刻零件，而是用新機構滿足舊情感。",
+  "diagram": "term.svg"
+ },
+ "moodboards": [
+  {
+   "theme": "Coastal regatta yacht-inspired roadster",
+   "zh": "沿海帆船賽事敞篷跑車",
+   "intro": "碼頭晨光、海軍藍腰線與柚木甲板：一台像小型賽艇一樣乾淨的敞篷 roadster，強調繩索、黃銅五金和能被海水打濕的材質。",
+   "images": [
+    ["mb1-1", "原創虛構概念：白色海軍藍腰線敞篷跑車停在碼頭，遠方帆影", true],
+    ["mb1-2", "座艙：柚木儀表台、黃銅儀表與海軍藍飾帶（程式繪製）", false],
+    ["mb1-3", "細節：柚木甲板紋、纜繩與黃銅羊角（程式繪製）", false],
+    ["mb1-4", "材質：帆布紋理與海軍藍車縫線（程式生成）", false]
+   ],
+   "palette": [
+    ["Salt White", "#F4F7F8"],
+    ["Navy Stripe", "#1E5A8A"],
+    ["Harbour", "#3A7CA5"],
+    ["Teak", "#8B5A2B"],
+    ["Brass", "#B8976A"],
+    ["Signal", "#C45C26"]
+   ],
+   "keywords": ["帆船賽 Regatta", "柚木甲板", "海軍藍腰線", "黃銅五金", "低風擋", "碼頭晨光"],
+   "materials": ["船用柚木薄片（儀表、門檻）", "防水帆布軟篷", "海軍藍皮革滾邊", "黃銅旋鈕與羊角", "陽極氧化鋁飾板", "抗鹽霧透明塗層"]
+  },
+  {
+   "theme": "Art Deco streamliner",
+   "zh": "裝飾藝術流線型",
+   "intro": "1930 年代火車與遠洋郵輪的鍍鉻豎柵、淚滴車身和扇形儀表：一台在黃昏城市天際線前拉長的黑金 streamliner。",
+   "images": [
+    ["mb2-1", "原創虛構概念：黑金淚滴流線型轎跑，後輪加蓋、鍍鉻矛線", true],
+    ["mb2-2", "前臉：裝飾藝術豎柵與旭日徽章（程式繪製）", false],
+    ["mb2-3", "座艙：扇形儀表台、象牙色儀表與金線方向盤（程式繪製）", false],
+    ["mb2-4", "材質：深色鋼琴烤漆與金粉微粒（程式生成）", false]
+   ],
+   "palette": [
+    ["Obsidian", "#1A1A20"],
+    ["Chrome", "#A8AEB4"],
+    ["Deco Gold", "#C9A227"],
+    ["Ivory", "#F5F0E6"],
+    ["Burgundy Night", "#2D1F3D"],
+    ["Ember Dusk", "#4A2C1A"]
+   ],
+   "keywords": ["Streamliner", "豎柵 Grille", "淚滴比例", "鍍鉻矛線", "扇形儀表", "裝飾藝術"],
+   "materials": ["鏡面鍍鉻豎柵", "鋼琴黑烤漆", "象牙色膠木儀表", "金箔細飾線", "絲絨座椅", "煙燻玻璃艙蓋"]
+  }
+ ]
+}
